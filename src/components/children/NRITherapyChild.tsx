@@ -1,6 +1,7 @@
 import AnimatedSection from '@/components/shared/AnimatedSection'
 import Link from 'next/link'
 import { NRiBrand } from '@/components/shared/NRiBrand'
+import BookingButton from '@/components/shared/BookingButton'
 
 const playlist = [
   { n: '01', song: 'Queen — We Will Rock You', bpm: '110 BPM', goal: 'Bazálne gangliá', desc: 'Silné dup-dup-plesk. Bazálna ganglia stimulácia — filter pohybu.', color: '#4a3080' },
@@ -110,9 +111,9 @@ export default function NRITherapyChild() {
         </AnimatedSection>
 
         <AnimatedSection delay={200} className="text-center mt-12">
-          <a href="https://complex-diagnostic.eu/objednani-terminu-vysetreni/" target="_blank" rel="noopener noreferrer" className="btn-primary btn-kids text-base px-10 py-4">
+          <BookingButton service="child" className="btn-primary btn-kids text-base px-10 py-4">
             Objednať dieťa na prvé sedenie
-          </a>
+          </BookingButton>
           <p className="text-white/35 text-sm mt-4">
             Prvé sedenie: zoznámenie, anamnéza a krátka ukážka sedenia
           </p>

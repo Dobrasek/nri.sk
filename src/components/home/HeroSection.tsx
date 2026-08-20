@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react'
 import Link from 'next/link'
 import BreathingCircle from '@/components/shared/BreathingCircle'
 import { NRiBrand } from '@/components/shared/NRiBrand'
+import BookingButton from '@/components/shared/BookingButton'
 
 export default function HeroSection() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -106,9 +107,9 @@ export default function HeroSection() {
 
         {/* CTA */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="https://complex-diagnostic.eu/objednani-terminu-vysetreni/" target="_blank" rel="noopener noreferrer" className="btn-primary text-base px-8 py-4">
+          <BookingButton className="btn-primary text-base px-8 py-4">
             Objednať sa na sedenie
-          </a>
+          </BookingButton>
           <Link
             href="#vstup"
             className="px-8 py-4 text-base font-jakarta font-500 text-white/70 hover:text-white border border-white/15 hover:border-white/30 rounded-xl transition-all"

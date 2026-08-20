@@ -1,4 +1,5 @@
 import AnimatedSection from '@/components/shared/AnimatedSection'
+import BookingButton from '@/components/shared/BookingButton'
 import Link from 'next/link'
 
 const steps = [
@@ -177,9 +178,9 @@ export default function TherapyProcess() {
         </div>
 
         <AnimatedSection className="text-center">
-          <a href="https://complex-diagnostic.eu/objednani-terminu-vysetreni/" target="_blank" rel="noopener noreferrer" className="btn-primary text-base px-10 py-4">
+          <BookingButton service="adult" className="btn-primary text-base px-10 py-4">
             Objednať sa na prvé sedenie
-          </a>
+          </BookingButton>
           <p className="text-white/30 text-sm mt-4">
             Prvé stretnutie: orientačný rozhovor + krátka ukážka sedenia
           </p>

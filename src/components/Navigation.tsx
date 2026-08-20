@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 import { Menu, X, Brain } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { NRiBrand } from '@/components/shared/NRiBrand'
+import { BookingDialog } from '@/components/shared/BookingButton'
 
 const navLinks = [
   { href: '/dospeli', label: 'Pre dospelých' },
@@ -17,6 +18,9 @@ const navLinks = [
 
 export default function Navigation() {
   const [open, setOpen] = useState(false)
+  // Dialóg drží navigácia, nie tlačidlo — mobilné menu sa pri otvorení zavrie
+  // a tlačidlo s ním zmizne aj s vlastným stavom.
+  const [booking, setBooking] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
   const isKids = pathname.startsWith('/deti')
@@ -74,10 +78,9 @@ export default function Navigation() {
         </nav>
 
         {/* CTA */}
-        <a
-          href="https://complex-diagnostic.eu/objednani-terminu-vysetreni/"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          type="button"
+          onClick={() => setBooking(true)}
           className="hidden md:flex items-center gap-2 px-5 py-2.5 text-sm font-jakarta font-600 text-white rounded-xl transition-all hover:-translate-y-0.5 hover:shadow-lg"
           style={{
             background: `linear-gradient(135deg, ${accent} 0%, #2a9aa8 100%)`,
@@ -85,7 +88,7 @@ export default function Navigation() {
           }}
         >
           Objednať sa
-        </a>
+        </button>
 
         {/* Mobile toggle */}
         <button
@@ -116,19 +119,19 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href="https://complex-diagnostic.eu/objednani-terminu-vysetreni/"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setOpen(false)}
+            <button
+              type="button"
+              onClick={() => { setOpen(false); setBooking(true) }}
               className="mt-2 px-4 py-3 text-sm font-jakarta font-600 text-white rounded-xl text-center"
               style={{ background: `linear-gradient(135deg, ${accent} 0%, #2a9aa8 100%)` }}
             >
               Objednať sa
-            </a>
+            </button>
           </nav>
         </div>
       )}
+
+      {booking && <BookingDialog onClose={() => setBooking(false)} />}
     </header>
   )
 }

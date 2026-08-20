@@ -3,6 +3,7 @@ import AudienceCards from '@/components/home/AudienceCards'
 import WhatIsNRI from '@/components/home/WhatIsNRI'
 import AnimatedSection from '@/components/shared/AnimatedSection'
 import Link from 'next/link'
+import BookingButton from '@/components/shared/BookingButton'
 
 export default function HomePage() {
   return (
@@ -45,9 +46,9 @@ export default function HomePage() {
             Prvé orientačné stretnutie je nezáväzné. Spoločne zistíme, čo váš nervový systém potrebuje.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://complex-diagnostic.eu/objednani-terminu-vysetreni/" target="_blank" rel="noopener noreferrer" className="btn-primary text-base px-10 py-4">
+            <BookingButton className="btn-primary text-base px-10 py-4">
               Objednať sa
-            </a>
+            </BookingButton>
             <Link
               href="/blog"
               className="px-10 py-4 text-base font-jakarta font-500 text-white/60 hover:text-white border border-white/12 hover:border-white/25 rounded-xl transition-all"
