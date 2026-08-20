@@ -1,7 +1,10 @@
-// Objednávanie beží na rezervačnom widgete Adamia (adamio.sk, sk.html + booking.js).
+// Objednávanie beží na rezervačnom widgete Adamia (sk.html + booking.js).
 // Widget vie predvoliť službu z parametra `sluzba` a rovno otvoriť kalendár —
 // id musia sedieť so SERVICES v repozitári complex-diagnostic.eu.
-const BOOKING_BASE = 'https://adamio.sk/'
+//
+// Kanonický host je s www; adamio.sk bez neho je len 308 navyše. Slovenský
+// host schválne — widget hovorí jazykom titulky, na ktorej stojí.
+const BOOKING_BASE = 'https://www.adamio.sk/'
 
 export const BOOKING_SERVICES = {
   child: { id: 'eb-dite', label: 'NRi terapia — dieťa', note: '55 min · 50 €' },
