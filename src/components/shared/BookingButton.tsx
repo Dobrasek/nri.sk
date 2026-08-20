@@ -63,33 +63,27 @@ export function BookingDialog({ onClose }: { onClose: () => void }) {
       aria-label="Objednanie termínu"
     >
       <div
-        className={cn(
-          'relative w-full max-w-md rounded-3xl p-7 border shadow-2xl',
-          isKids ? 'bg-[#f8f7f4] border-black/8' : 'bg-[#101d30] border-white/10'
-        )}
+        className="relative w-full max-w-md rounded-3xl p-7 border shadow-2xl"
+        style={{
+          background: isKids ? '#132a20' : '#101d30',
+          borderColor: isKids ? 'rgba(43,138,98,.25)' : 'rgba(255,255,255,.1)',
+          boxShadow: '0 8px 40px rgba(0,0,0,.4)',
+        }}
         onClick={e => e.stopPropagation()}
       >
         <button
           type="button"
           onClick={onClose}
           aria-label="Zavrieť"
-          className={cn(
-            'absolute top-4 right-4 p-2 rounded-lg transition-colors',
-            isKids ? 'text-black/35 hover:text-black/70' : 'text-white/40 hover:text-white'
-          )}
+          className="absolute top-4 right-4 p-2 rounded-lg text-white/40 hover:text-white transition-colors"
         >
           <X className="w-5 h-5" />
         </button>
 
-        <h2
-          className={cn(
-            'font-jakarta text-2xl font-700 mb-2 pr-8',
-            isKids ? 'text-[#1f2a2e]' : 'text-white'
-          )}
-        >
+        <h2 className="font-jakarta text-2xl font-700 mb-2 pr-8 text-white">
           Objednať termín
         </h2>
-        <p className={cn('text-sm mb-7', isKids ? 'text-[#1f2a2e]/60' : 'text-white/50')}>
+        <p className="text-sm mb-7 text-white/50">
           Vyberte, pre koho je stretnutie. Otvorí sa rezervačný kalendár s voľnými termínmi.
         </p>
 
@@ -104,29 +98,24 @@ export function BookingDialog({ onClose }: { onClose: () => void }) {
                 rel="noopener noreferrer"
                 onClick={onClose}
                 className={cn(
-                  'flex items-center justify-between gap-4 px-5 py-4 rounded-2xl border transition-all group',
+                  'flex items-center justify-between gap-4 px-5 py-4 rounded-2xl border bg-white/5 transition-all hover:bg-white/8 hover:-translate-y-0.5 group',
                   isKids
-                    ? 'bg-white border-black/8 hover:border-[#2b8a62]/50 hover:-translate-y-0.5'
-                    : 'bg-white/4 border-white/10 hover:border-[#2a9aa8]/50 hover:bg-white/8 hover:-translate-y-0.5'
+                    ? 'border-[#2b8a62]/25 hover:border-[#2b8a62]/60'
+                    : 'border-white/10 hover:border-[#2a9aa8]/50'
                 )}
               >
                 <span className="flex flex-col text-left">
-                  <span
-                    className={cn(
-                      'font-jakarta font-600 text-[15px]',
-                      isKids ? 'text-[#1f2a2e]' : 'text-white'
-                    )}
-                  >
+                  <span className="font-jakarta font-600 text-[15px] text-white">
                     {svc.label}
                   </span>
-                  <span className={cn('text-xs mt-0.5', isKids ? 'text-[#1f2a2e]/50' : 'text-white/45')}>
+                  <span className="text-xs mt-0.5 text-white/45">
                     {svc.note}
                   </span>
                 </span>
                 <ArrowRight
                   className={cn(
                     'w-5 h-5 shrink-0 transition-transform group-hover:translate-x-1',
-                    isKids ? 'text-[#2b8a62]' : 'text-[#2a9aa8]'
+                    isKids ? 'text-[#3db882]' : 'text-[#2a9aa8]'
                   )}
                 />
               </a>

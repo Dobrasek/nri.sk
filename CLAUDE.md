@@ -16,7 +16,10 @@ npm run lint       # ESLint
 
 **Two audience themes** — the site serves adults (`/dospeli`) and children+parents (`/deti`) with distinct visual identities:
 - Adults: dark navy/petrol (`#0b1524` bg, `#1b6b72` accent, `#7a2d45` secondary)
-- Children: light warm white (`#f8f7f4` bg, `#2b8a62` accent, pastels)
+- Children: dark forest green (`#0f1f18` bg, `#2b8a62` accent, `#3db882` highlight), white text
+  on `rgba(255,255,255,.05)` cards with green-tinted borders. The `--color-kids-*` tokens in
+  `globals.css` still hold an older light palette — the pages hardcode the dark greens, so match
+  the pages, not the tokens.
 - Theme is applied via `.theme-adults` / `.theme-kids` CSS classes that set `--bg`, `--primary`, etc. custom properties declared in `globals.css`
 
 **Design tokens** are defined in `src/app/globals.css` inside `@theme inline {}` (Tailwind v4 syntax). Custom utility classes (`glass-card`, `btn-primary`, `btn-kids`, `section-label`, `text-gradient-*`) are also in globals.css.
