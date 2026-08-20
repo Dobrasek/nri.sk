@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Brain, Mail, Phone, MapPin } from 'lucide-react'
 import { NRiBrand } from '@/components/shared/NRiBrand'
 import { ObfuscatedEmail } from '@/components/shared/ObfuscatedEmail'
+import BookingButton from '@/components/shared/BookingButton'
 
 export default function Footer() {
   return (
@@ -74,9 +75,9 @@ export default function Footer() {
                 </li>
               ))}
               <li>
-                <a href="https://complex-diagnostic.eu/objednani-terminu-vysetreni/" target="_blank" rel="noopener noreferrer" className="text-white/45 hover:text-white/75 text-sm transition-colors">
+                <BookingButton className="text-white/45 hover:text-white/75 text-sm transition-colors">
                   Objednať sa
-                </a>
+                </BookingButton>
               </li>
             </ul>
           </div>

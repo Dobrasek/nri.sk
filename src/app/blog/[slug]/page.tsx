@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getPostBySlug, getAllPosts } from '@/lib/blog'
 import { ArrowLeft, Clock } from 'lucide-react'
+import BookingButton from '@/components/shared/BookingButton'
 
 interface Props { params: Promise<{ slug: string }> }
 
@@ -85,9 +86,9 @@ export default async function BlogPostPage({ params }: Props) {
           style={{ background: 'rgba(27,107,114,.08)', borderColor: 'rgba(27,107,114,.2)' }}
         >
           <p className="text-white/60 mb-4">Chcete sa dozvedieť viac osobne?</p>
-          <a href="https://complex-diagnostic.eu/objednani-terminu-vysetreni/" target="_blank" rel="noopener noreferrer" className="btn-primary">
+          <BookingButton className="btn-primary">
             Objednať sa na sedenie
-          </a>
+          </BookingButton>
         </div>
       </div>
     </div>

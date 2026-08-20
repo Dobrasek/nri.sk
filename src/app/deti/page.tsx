@@ -6,6 +6,7 @@ import WhatYouSeeAtHome from '@/components/children/WhatYouSeeAtHome'
 import InteractiveBrainChild from '@/components/children/InteractiveBrainChild'
 import BrainActivities from '@/components/children/BrainActivities'
 import NRITherapyChild from '@/components/children/NRITherapyChild'
+import BookingButton from '@/components/shared/BookingButton'
 
 export const metadata: Metadata = {
   title: 'NRi pre deti — ADHD, PAS, Hypersenzitivita, Reč, Motorika',
@@ -56,9 +57,9 @@ export default function DetiPage() {
               Výbuchy, hypersenzitivita, problémy s rečou alebo spánkom — to sú signály nervového systému dieťaťa. Pohybom, rytmom a hrou ho môžeme naučiť byť v bezpečí.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://complex-diagnostic.eu/objednani-terminu-vysetreni/" target="_blank" rel="noopener noreferrer" className="btn-primary btn-kids px-8 py-4">
+              <BookingButton service="child" className="btn-primary btn-kids px-8 py-4">
                 Objednať dieťa
-              </a>
+              </BookingButton>
               <a
                 href="#doma"
                 className="px-8 py-4 text-sm font-jakarta font-500 text-white/55 hover:text-white border border-white/15 hover:border-white/30 rounded-xl transition-all"
@@ -184,9 +185,9 @@ export default function DetiPage() {
           <p className="text-white/55 text-lg mb-10">
             Neuroplasticita u detí je obrovská. Čím skôr začneme, tým viac nových dráh sa vytvorí. Prvé stretnutie je nezáväzné.
           </p>
-          <a href="https://complex-diagnostic.eu/objednani-terminu-vysetreni/" target="_blank" rel="noopener noreferrer" className="btn-primary btn-kids text-base px-10 py-4">
+          <BookingButton service="child" className="btn-primary btn-kids text-base px-10 py-4">
             Objednať sa na prvé stretnutie
-          </a>
+          </BookingButton>
         </AnimatedSection>
       </section>
     </div>

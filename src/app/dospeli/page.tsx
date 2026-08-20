@@ -9,6 +9,7 @@ import TherapyProcess from '@/components/adults/TherapyProcess'
 import Symptoms from '@/components/adults/Symptoms'
 import Testimonials from '@/components/adults/Testimonials'
 import FAQSection from '@/components/adults/FAQSection'
+import BookingButton from '@/components/shared/BookingButton'
 
 export const metadata: Metadata = {
   title: 'NRi pre dospelých — Trauma, Úzkosť, ADHD, Burnout',
@@ -39,9 +40,9 @@ export default function DospeliPage() {
               Trauma, úzkosť, freeze, emočné preťaženie — nie sú to chyby charakteru. Sú to stavy nervového systému, ktoré sa naučili prežívať. <NRiBrand /> to vie zmeniť.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://complex-diagnostic.eu/objednani-terminu-vysetreni/" target="_blank" rel="noopener noreferrer" className="btn-primary px-8 py-4">
+              <BookingButton service="adult" className="btn-primary px-8 py-4">
                 Objednať sa
-              </a>
+              </BookingButton>
               <a href="#nervovy-system" className="px-8 py-4 text-sm font-jakarta font-500 text-white/60 hover:text-white border border-white/12 hover:border-white/25 rounded-xl transition-all">
                 Ako to funguje
               </a>
@@ -91,9 +92,9 @@ export default function DospeliPage() {
           <p className="text-white/50 text-lg mb-10">
             Prvé stretnutie je nezáväzné a orientačné. Spoločne sa pozrieme na váš nervový systém a nájdeme cestu k bezpečiu.
           </p>
-          <a href="https://complex-diagnostic.eu/objednani-terminu-vysetreni/" target="_blank" rel="noopener noreferrer" className="btn-primary text-base px-10 py-4">
+          <BookingButton service="adult" className="btn-primary text-base px-10 py-4">
             Objednať prvé stretnutie
-          </a>
+          </BookingButton>
         </AnimatedSection>
       </section>
     </div>
