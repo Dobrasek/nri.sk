@@ -30,7 +30,7 @@ export default function NervousSystemLayers() {
               bg: 'rgba(27,107,114,.12)',
               icon: '🌿',
               desc: 'Nervový systém je v regulácii. Sme schopní kontaktu, učenia, hry a tvorivosti. Srdce bije pokojne.',
-              signs: ['Otvorenosť vzťahom', 'Schopnosť koncentrácie', 'Hravosť a zvedavosť', 'Kľudný dych a tep'],
+              signs: ['Otvorenosť vzťahom', 'Schopnosť koncentrácie', 'Hravosť a zvedavosť', 'Pokojný dych a tep'],
             },
             {
               state: 'Mobilizácia',
@@ -38,7 +38,7 @@ export default function NervousSystemLayers() {
               color: '#c8700a',
               bg: 'rgba(200,112,10,.12)',
               icon: '⚡',
-              desc: 'Amygdala spustila alarm. Telo sa mobilizuje na boj alebo útek. Pri chronickom strese tkvíme tu.',
+              desc: 'Amygdala spustila alarm. Telo sa mobilizuje na boj alebo útek. Pri chronickom strese uviazneme tu.',
               signs: ['Úzkosť a strach', 'Impulzivita', 'Hypervigilancia', 'Napätie v tele', 'Podráždenosť'],
             },
             {
@@ -48,7 +48,7 @@ export default function NervousSystemLayers() {
               bg: 'rgba(74,48,128,.12)',
               icon: '❄️',
               desc: 'Hlboká obrana. Keď boj ani útek neboli možné, mozog sa „vypol". Disociácia, odpojenie, strnulosť.',
-              signs: ['Disociácia a odpojenie', 'Emočné otupenie', 'Únava a ťahavosť', 'Pocit beznádeje', 'Freeze reakcie'],
+              signs: ['Disociácia a odpojenie', 'Emočné otupenie', 'Únava a ťažoba', 'Pocit beznádeje', 'Freeze reakcie'],
             },
           ].map((s, i) => (
             <AnimatedSection key={s.state} delay={i * 100}>
@@ -91,7 +91,7 @@ export default function NervousSystemLayers() {
                   Keď sme prežili niečo ohromujúce, mozgový kmeň a amygdala si to zapamätali — nie ako príbeh, ale ako telesný stav. Telo zostalo v alarme, aj keď nebezpečenstvo pominulo.
                 </p>
                 <p className="text-white/55 leading-relaxed">
-                  NRI pracuje priamo s týmto telesným stavom — nie cez slová a príbehy, ale cez rytmus, pohyb a dych, ktoré hovoria najhlbším centrám mozgu: <em className="text-white/80 not-italic">„Si v bezpečí. Môžeš sa uvoľniť."</em>
+                  NRi pracuje priamo s týmto telesným stavom — nie cez slová a príbehy, ale cez rytmus, pohyb a dych, ktoré hovoria najhlbším centrám mozgu: <em className="text-white/80 not-italic">„Si v bezpečí. Môžeš sa uvoľniť."</em>
                 </p>
               </div>
               <div className="flex flex-col gap-4">

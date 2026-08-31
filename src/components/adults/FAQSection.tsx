@@ -21,11 +21,11 @@ const faqs = [
   },
   {
     q: 'Musím mať nejakú diagnózu?',
-    a: 'Nie. NRI nie je len pre ľudí s diagnózou. Pracujeme so všetkými, ktorí cítia, že ich nervový systém nie je v rovnováhe — bez ohľadu na to, či majú "papier" alebo nie.',
+    a: 'Nie. NRi nie je len pre ľudí s diagnózou. Pracujeme so všetkými, ktorí cítia, že ich nervový systém nie je v rovnováhe — bez ohľadu na to, či majú "papier" alebo nie.',
   },
   {
     q: 'Je NRi vedecky podložená?',
-    a: 'Áno. NRI integruje poznatky z neurobiológie traumy (van der Kolk, Porges), Polyvagálnej teórie (Stephen Porges), somato-senzorických prístupov a rytmickej stimulácie mozgu. Každá technika má neurovedecké zdôvodnenie.',
+    a: 'Áno. NRi integruje poznatky z neurobiológie traumy (van der Kolk, Porges), Polyvagálnej teórie (Stephen Porges), somato-senzorických prístupov a rytmickej stimulácie mozgu. Každá technika má neurovedecké zdôvodnenie.',
   },
   {
     q: 'Kombinuje sa NRi s inými metódami?',

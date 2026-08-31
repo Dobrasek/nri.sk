@@ -32,7 +32,7 @@ export default function BlogPage() {
             Pochopiť nervový systém
           </h1>
           <p className="text-white/50 text-lg max-w-xl mx-auto">
-            Články o neurobiológii, traume, NRI terapii a každodennej regulácii.
+            Články o neurobiológii, traume, NRi terapii a každodennej regulácii.
           </p>
         </AnimatedSection>
 

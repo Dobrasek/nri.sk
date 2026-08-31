@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const post = getPostBySlug(slug)
   if (!post) return {}
-  return { title: `${post.title} — NRI Blog`, description: post.excerpt }
+  return { title: `${post.title} — NRi Blog`, description: post.excerpt }
 }
 
 function parseMarkdown(md: string): string {

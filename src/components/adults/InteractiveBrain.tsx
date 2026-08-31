@@ -175,7 +175,7 @@ function RegionPanel({ region, onClose }: { region: BrainRegion; onClose: () => 
           <div className="flex items-center gap-2 mb-2">
             <Music className="w-3.5 h-3.5" style={{ color: region.hoverColor }} />
             <span className="text-xs font-jakarta font-600 uppercase tracking-wide" style={{ color: region.hoverColor }}>
-              NRI techniky
+              NRi techniky
             </span>
           </div>
           <ul className="space-y-1">
@@ -228,7 +228,7 @@ export default function InteractiveBrain() {
             <span className="text-gradient-teal">čo sa deje vo vašom mozgu</span>
           </h2>
           <p className="text-white/50 max-w-xl mx-auto">
-            Každá oblasť mozgu hrá svoju úlohu. Kliknutím sa dozviete, čo zodpovedá za vaše symptómy a ako NRI pracuje práve s touto oblasťou.
+            Každá oblasť mozgu hrá svoju úlohu. Kliknutím sa dozviete, čo zodpovedá za vaše symptómy a ako NRi pracuje práve s touto oblasťou.
           </p>
         </AnimatedSection>
 
@@ -247,7 +247,7 @@ export default function InteractiveBrain() {
                   Vyberte oblasť
                 </h3>
                 <p className="text-white/45 text-sm leading-relaxed max-w-xs">
-                  Kliknite na farebnú oblasť v diagrame mozgu a zistíte jej funkciu, typické príznaky a NRI techniky na jej posilnenie.
+                  Kliknite na farebnú oblasť v diagrame mozgu a zistíte jej funkciu, typické príznaky a NRi techniky na jej posilnenie.
                 </p>
                 <div className="mt-8 grid grid-cols-2 gap-2 w-full max-w-xs">
                   {adultsBrainRegions.slice(0, 6).map(r => (

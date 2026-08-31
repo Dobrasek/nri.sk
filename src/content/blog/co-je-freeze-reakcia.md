@@ -10,11 +10,11 @@ readTime: "6 min čítania"
 
 Keď amygdala vyhodnotí hrozbu ako príliš veľkú na to, aby ste mohli bojovať alebo utiecť, aktivuje tretiu — najstaršiu — reakciu: zamrznutie.
 
-Dorsal vagálny systém spomalí srdcovú frekvenciu, dýchanie, pohyb. Telo sa stane strnulým alebo naopak kolabujúcim. Myseľ sa "odpojí".
+Dorzálny vagálny systém spomalí srdcovú frekvenciu, dýchanie, pohyb. Telo sa stane strnulým alebo naopak kolabujúcim. Myseľ sa "odpojí".
 
 ## Prečo sa to deje dospelým?
 
-Ak ste ako dieťa prežívali situácie, kde nebola možná ani obrana, ani únik — mozog sa to naučil ako svoju "bezpečnú zálohu". Dnes, aj keď ste dospelý a hrozba nie je reálna, starý mozok stále reaguje rovnako.
+Ak ste ako dieťa prežívali situácie, kde nebola možná ani obrana, ani únik — mozog sa to naučil ako svoju "bezpečnú zálohu". Dnes, aj keď ste dospelý a hrozba nie je reálna, starý mozog stále reaguje rovnako.
 
 **Typické spúšťače:**
 - Konflikt alebo konfrontácia
@@ -22,9 +22,9 @@ Ak ste ako dieťa prežívali situácie, kde nebola možná ani obrana, ani úni
 - Intenzívne emocionálne situácie
 - Kritika alebo odmietnutie
 
-## Ako NRI pomáha s freeze reakciou?
+## Ako NRi pomáha s freeze reakciou?
 
-NRI pracuje priamo s mozgovým kmeňom — tam, kde freeze sídli. Cez rytmus, pohyb a predvídateľný rituál učíme nervový systém, že pohyb je bezpečný.
+NRi pracuje priamo s mozgovým kmeňom — tam, kde freeze sídli. Cez rytmus, pohyb a predvídateľný rituál učíme nervový systém, že pohyb je bezpečný.
 
 **Technika "Mobilizácia životnej sily":**
 

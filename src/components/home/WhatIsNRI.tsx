@@ -73,7 +73,7 @@ export default function WhatIsNRI() {
                 Tri vrstvy nervového systému
               </h3>
               <p className="text-white/45 max-w-lg mx-auto">
-                NRI pracuje od zdola hore — najprv zakotvuje mozgový kmeň, potom limbický systém, nakoniec kortex.
+                NRi pracuje zdola nahor — najprv zakotvuje mozgový kmeň, potom limbický systém, nakoniec kortex.
               </p>
             </div>
 
@@ -82,7 +82,7 @@ export default function WhatIsNRI() {
                 {
                   layer: '01',
                   title: 'Mozgový kmeň',
-                  sub: 'Reptílí mozog',
+                  sub: 'Plazí mozog',
                   desc: 'Prežitie, rytmus, dych, bazálne bezpečie',
                   color: '#7a4020',
                   bg: 'rgba(122,64,32,.15)',

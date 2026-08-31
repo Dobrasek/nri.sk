@@ -44,17 +44,17 @@ export const adultsBrainRegions: BrainRegion[] = [
   {
     id: 'temporal',
     name: 'Temporálny lalok',
-    nameEn: 'Broccovo & Wernickeho centrum',
+    nameEn: 'Brocovo & Wernickeho centrum',
     color: '#7a2d45',
     hoverColor: '#a04060',
     emoji: '🎵',
-    description: 'Centrum pre reč, jazyk a emočnú pamäť. Wernickeho centrum rozumie slovám, Broccovo centrum ich produkuje. Hudobné zážitky a ritmus sa spracúvajú tu.',
+    description: 'Centrum pre reč, jazyk a emočnú pamäť. Wernickeho centrum rozumie slovám, Brocovo centrum ich produkuje. Hudobné zážitky a rytmus sa spracúvajú tu.',
     symptoms: [
       'Ťažkosti s rečou a artikuláciou',
       'Problémy s porozumením hovorenému slovu',
       'Dyslexia a dysfázia',
       'Ťažkosti s učením sa nových slov',
-      'Emočná pamäť — opakujúce sa trauma spomienky',
+      'Emočná pamäť — opakujúce sa traumatické spomienky',
     ],
     activities: [
       'Spev slabík a jednoduchých tónov',
@@ -64,7 +64,7 @@ export const adultsBrainRegions: BrainRegion[] = [
     ],
     nriTechniques: [
       'Tónovanie samohlások A-O-U',
-      'Spev syllabík MA-BA-PA',
+      'Spev slabík MA-BA-PA',
       'Hudobné zrkadlenie',
       'Rytmická stimulácia v pohybe',
     ],
@@ -81,7 +81,7 @@ export const adultsBrainRegions: BrainRegion[] = [
       'Odpojenie od tela (depersonalizácia)',
       'Senzorické preťaženie alebo precitlivenosť',
       'Ťažkosti s priestorovou orientáciou',
-      'Chudobná telesná schéma',
+      'Nepresná telesná schéma',
       'Problémy s ľavou/pravou stranou',
     ],
     activities: [
@@ -165,7 +165,7 @@ export const adultsBrainRegions: BrainRegion[] = [
       'Autonómna dysregulácia',
       'Poruchy spánku',
       'Chronické napätie v tele',
-      'Panic ataky',
+      'Panické ataky',
     ],
     activities: [
       'Hlboké dychové cvičenia',
@@ -255,7 +255,7 @@ export const adultsBrainRegions: BrainRegion[] = [
       'Pochodovanie v rytme',
     ],
     nriTechniques: [
-      'Bazálna ganglia stimulácia — 100-120 BPM',
+      'Stimulácia bazálnych ganglií — 100-120 BPM',
       'Silné rytmické dupanie',
       'Tlieskanie dup-dup-plesk vzorec',
       'Rhythmic Entrainment',
@@ -274,7 +274,7 @@ export const adultsBrainRegions: BrainRegion[] = [
       'Koordinačné ťažkosti',
       'Ťažkosti so skríženými pohybmi',
       'Problémy s integráciou ľavej a pravej strany',
-      'Periventrikulárna leukomalalácia (PVL)',
+      'Periventrikulárna leukomalácia (PVL)',
     ],
     activities: [
       'Skrížené pohyby cez stredovú líniu',
@@ -328,7 +328,7 @@ export const kidsBrainRegions: BrainRegion[] = [
     color: '#e8724a',
     hoverColor: '#f09060',
     emoji: '🎤',
-    description: 'Tu mozog rozumie slovám a zvukom! Broccovo centrum hovorí slová, Wernickeho centrum im rozumie. Hudba a rytmus pomáhajú trénovať tento lalok.',
+    description: 'Tu mozog rozumie slovám a zvukom! Brocovo centrum hovorí slová, Wernickeho centrum im rozumie. Hudba a rytmus pomáhajú trénovať tento lalok.',
     symptoms: [
       'Oneskorený vývoj reči',
       'Ťažkosti s porozumením pokynov',
@@ -386,15 +386,15 @@ export const kidsBrainRegions: BrainRegion[] = [
     emoji: '👀',
     description: 'Záhlavný lalok spracúva všetko, čo vidíme! Spolupracuje s mozočkom, aby sme vedeli trafiť loptou alebo prechádzať cez dvere bez narážania.',
     symptoms: [
-      'Ťažkosti so sledovaním pohybujúcich predmetov',
+      'Ťažkosti so sledovaním pohybujúcich sa predmetov',
       'Problémy s čítaním (preskakuje riadky)',
       'Dezorientácia pri pohybe',
-      'Ťažkosti s diaľkovým odhadom',
+      'Ťažkosti s odhadom vzdialenosti',
     ],
     activities: [
       '🌊 Sledovanie pomalého pohybu ruky',
       '🔮 Vizuálne sledovanie loptičky',
-      '🎯 Hry s terčom na rôznych vzdialenostiach',
+      '🎯 Hry s terčom v rôznych vzdialenostiach',
     ],
     nriTechniques: [
       'Vestibulárno-vizuálna integrácia',
@@ -411,7 +411,7 @@ export const kidsBrainRegions: BrainRegion[] = [
     emoji: '⚖️',
     description: 'Mozoček je ako "auto-pilot" tela — stará sa o rovnováhu a koordináciu. Trénujeme ho pomalými, plynulými pohybmi ako Tai-Ji alebo tanec.',
     symptoms: [
-      'Problémy s rovnováhou (pádanie)',
+      'Problémy s rovnováhou (padanie)',
       'Neohrabané pohyby',
       'Ťažkosti s bicyklom/kolobežkou',
       'Problémy s jemnou motorikou',
@@ -447,7 +447,7 @@ export const kidsBrainRegions: BrainRegion[] = [
     ],
     activities: [
       '🏡 Ranný rituál (vždy rovnaký)',
-      '🎵 Fixná NRI playlist (vždy rovnaké poradie)',
+      '🎵 Fixný NRi playlist (vždy rovnaké poradie)',
       '🌬️ Dych do bruška',
       '🤗 Mrmlanie MMM pri objatí',
     ],
@@ -498,7 +498,7 @@ export const kidsBrainRegions: BrainRegion[] = [
       'Nejasná dominancia rúk',
       'Ťažkosti so skríženými pohybmi',
       'Problémy s koordináciou ľavá-pravá',
-      'PVL (periventrikulárna leukomalalácia)',
+      'PVL (periventrikulárna leukomalácia)',
     ],
     activities: [
       '🌊 "Hladkanie oblakov" — ruky sa krížia',

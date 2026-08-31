@@ -97,7 +97,7 @@ export default function HeroSection() {
           Keď telo nezabudlo.
         </p>
         <p className="text-white/45 text-base md:text-lg max-w-xl mx-auto leading-relaxed mb-12">
-          <NRiBrand /> pomáha nervovému systému znovu nájsť bezpečie, pohyb, pokoj a spojenie — prepojením neurovedu, rytmu, dychu a pohybu.
+          <NRiBrand /> pomáha nervovému systému znovu nájsť bezpečie, pohyb, pokoj a spojenie — prepojením neurovedy, rytmu, dychu a pohybu.
         </p>
 
         {/* Breathing circle */}

@@ -6,9 +6,9 @@ const signs = [
   { icon: '😴', title: 'Problémy so spánkom', desc: 'Nemôže zaspať, budí sa v noci. Nervový systém ostáva v stave alarmu aj v noci.' },
   { icon: '🌀', title: 'Točenie, skákanie, nekľud', desc: 'Dieťa sa neustále pohybuje. Vestibulárny systém a mozoček hľadajú stimuláciu.' },
   { icon: '🚫', title: 'Odmietanie dotyku', desc: 'Oblečenie, objatia, jedlo — všetko je "zlé". Taktilná precitlivenosť v parietálnom laloku.' },
-  { icon: '🗣️', title: 'Oneskorená reč', desc: 'Nehovorí, hovorí málo alebo nerozumie pokynom. Broccovo centrum potrebuje rytmickú aktiváciu.' },
-  { icon: '🎯', title: 'Problémy s pozornosťou', desc: 'Neumí sedieť, ľahko sa rozptýli. Frontálny lalok potrebuje tréning regulácie.' },
-  { icon: '🏃', title: 'Motorická neohrabanosť', desc: 'Narážanie do vecí, pádanie, ťažkosti s bicyklom. Mozoček potrebuje posilniť.' },
+  { icon: '🗣️', title: 'Oneskorená reč', desc: 'Nehovorí, hovorí málo alebo nerozumie pokynom. Brocovo centrum potrebuje rytmickú aktiváciu.' },
+  { icon: '🎯', title: 'Problémy s pozornosťou', desc: 'Nevie sedieť, ľahko sa rozptýli. Frontálny lalok potrebuje tréning regulácie.' },
+  { icon: '🏃', title: 'Motorická neohrabanosť', desc: 'Narážanie do vecí, padanie, ťažkosti s bicyklom. Mozoček potrebuje posilniť.' },
 ]
 
 export default function WhatYouSeeAtHome() {
@@ -26,7 +26,7 @@ export default function WhatYouSeeAtHome() {
             Signály nervového systému
           </h2>
           <p className="text-white/55 text-lg max-w-2xl mx-auto">
-            Tieto prejavy nie sú „zlobenie" ani „nevychovanosť". Sú to správy, ktoré nervový systém dieťaťa posiela — a ktorým rozumieme.
+            Tieto prejavy nie sú „neposlušnosť" ani „nevychovanosť". Sú to správy, ktoré nervový systém dieťaťa posiela — a ktorým rozumieme.
           </p>
         </AnimatedSection>
 

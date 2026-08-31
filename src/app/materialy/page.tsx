@@ -4,7 +4,7 @@ import { Download, FileText, BookOpen, Image } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Materiály — NRi | PDF, Checklisty, Plagáty',
-  description: 'Zadarmo stiahnuteľné materiály: checklisty dysregulácie, mapa mozgu, NRI playlist guide, príručky pre rodičov.',
+  description: 'Zadarmo stiahnuteľné materiály: checklisty dysregulácie, mapa mozgu, NRi playlist guide, príručky pre rodičov.',
 }
 
 const materials = [
@@ -20,7 +20,7 @@ const materials = [
   {
     icon: Image,
     title: 'Mapa mozgu dieťaťa',
-    desc: 'Farebný plagát s oblasťami mozgu, ich funkciami a odporúčanými aktivitami. Ideálne na vylepenie doma.',
+    desc: 'Farebný plagát s oblasťami mozgu, ich funkciami a odporúčanými aktivitami. Ideálny na vyvesenie doma.',
     category: 'Pre deti & rodičov',
     type: 'PDF • A3',
     color: '#2b8a62',
@@ -29,7 +29,7 @@ const materials = [
   {
     icon: BookOpen,
     title: 'Hry podľa oblastí mozgu',
-    desc: 'Príručka s 24 hrami a aktivitami priradenými ku konkrétnym oblastiam mozgu. Vhodné pre deti 2–12 rokov.',
+    desc: 'Príručka s 24 hrami a aktivitami priradenými ku konkrétnym oblastiam mozgu. Vhodná pre deti 2–12 rokov.',
     category: 'Pre deti & rodičov',
     type: 'PDF • 12 strán',
     color: '#3474b8',
@@ -37,8 +37,8 @@ const materials = [
   },
   {
     icon: FileText,
-    title: 'NRI Playlist Guide',
-    desc: 'Kompletný protokol NRI — poradie skladieb, BPM, pohyby ku každej skladbe a krízový ťahák.',
+    title: 'NRi Playlist Guide',
+    desc: 'Kompletný protokol NRi — poradie skladieb, BPM, pohyby ku každej skladbe a krízový ťahák.',
     category: 'Pre rodičov & odborníkov',
     type: 'PDF • 8 strán',
     color: '#7a2d45',
@@ -47,7 +47,7 @@ const materials = [
   {
     icon: Image,
     title: 'Polyvagálna pyramída',
-    desc: 'Vizuálny plagát vysvetľujúci tri stavy nervového systému a ich prejavy. Vhodné pre ambulanciu aj domov.',
+    desc: 'Vizuálny plagát vysvetľujúci tri stavy nervového systému a ich prejavy. Vhodný pre ambulanciu aj domov.',
     category: 'Neurobiológia',
     type: 'PDF • A3',
     color: '#4a3080',
@@ -56,7 +56,7 @@ const materials = [
   {
     icon: FileText,
     title: 'Krízový ťahák — reakcie nervovej sústavy',
-    desc: 'Rýchloupravná karta pre rodičov: čo robiť, keď dieťa plače, stuhne, disociuje alebo má záchvaty.',
+    desc: 'Rýchla orientačná karta pre rodičov: čo robiť, keď dieťa plače, stuhne, disociuje alebo má záchvaty.',
     category: 'Pre deti & rodičov',
     type: 'PDF • A5 na vytlačenie',
     color: '#c8700a',

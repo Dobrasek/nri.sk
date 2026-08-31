@@ -155,7 +155,7 @@ export default function DetiPage() {
                 { icon: '📋', title: 'Checklist dysregulácie', type: 'PDF' },
                 { icon: '🗺️', title: 'Mapa mozgu dieťaťa', type: 'Plagát A3' },
                 { icon: '🎮', title: 'Hry podľa mozgu', type: 'Príručka' },
-                { icon: '🎵', title: 'NRI playlist guide', type: 'PDF' },
+                { icon: '🎵', title: 'NRi playlist guide', type: 'PDF' },
               ].map(item => (
                 <div
                   key={item.title}
