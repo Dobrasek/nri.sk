@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Menu, X, Brain } from 'lucide-react'
+import { Menu, X, Brain, LogIn } from 'lucide-react'
+import { Show, UserButton } from '@clerk/nextjs'
 import { cn } from '@/lib/utils'
 import { NRiBrand } from '@/components/shared/NRiBrand'
 import { BookingDialog } from '@/components/shared/BookingButton'
@@ -13,6 +14,7 @@ const navLinks = [
   { href: '/deti', label: 'Pre deti & rodičov' },
   { href: '/blog', label: 'Blog' },
   { href: '/materialy', label: 'Materiály' },
+  { href: '/clenstvo', label: 'Členská sekcia' },
   { href: '/kontakt', label: 'Kontakt' },
 ]
 
@@ -77,7 +79,22 @@ export default function Navigation() {
           ))}
         </nav>
 
-        {/* CTA */}
+        {/* Účet + CTA */}
+        <div className="hidden md:flex items-center gap-3">
+          <Show when="signed-out">
+            <Link
+              href="/prihlasenie"
+              className="flex items-center gap-1.5 px-3 py-2 text-sm font-jakarta font-medium text-white/60 hover:text-white rounded-lg hover:bg-white/6 transition-all"
+            >
+              <LogIn className="w-4 h-4" /> Prihlásiť
+            </Link>
+          </Show>
+          <Show when="signed-in">
+            <UserButton
+              appearance={{ elements: { avatarBox: 'w-9 h-9' } }}
+              userProfileProps={{ appearance: { variables: { colorPrimary: accent } } }}
+            />
+          </Show>
         <button
           type="button"
           onClick={() => setBooking(true)}
@@ -89,6 +106,7 @@ export default function Navigation() {
         >
           Objednať sa
         </button>
+        </div>
 
         {/* Mobile toggle */}
         <button
@@ -119,6 +137,21 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
+            <Show when="signed-out">
+              <Link
+                href="/prihlasenie"
+                onClick={() => setOpen(false)}
+                className="flex items-center gap-2 px-4 py-3 text-sm font-jakarta font-medium text-white/70 hover:text-white rounded-lg hover:bg-white/6 transition-all"
+              >
+                <LogIn className="w-4 h-4" /> Prihlásiť sa
+              </Link>
+            </Show>
+            <Show when="signed-in">
+              <div className="px-4 py-3 flex items-center gap-3">
+                <UserButton appearance={{ elements: { avatarBox: 'w-8 h-8' } }} />
+                <span className="text-sm font-jakarta text-white/70">Môj účet</span>
+              </div>
+            </Show>
             <button
               type="button"
               onClick={() => { setOpen(false); setBooking(true) }}
