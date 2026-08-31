@@ -2,14 +2,14 @@ import AnimatedSection from '@/components/shared/AnimatedSection'
 import { NRiBrand } from '@/components/shared/NRiBrand'
 
 const symptoms = [
-  { icon: '🌊', title: 'Chronická úzkosť', desc: 'Pocit neustáleho alarmu, aj keď sa nič nedeje. Hypervigilia, "čakanie na katastrofu".' },
+  { icon: '🌊', title: 'Chronická úzkosť', desc: 'Pocit neustáleho alarmu, aj keď sa nič nedeje. Hypervigilancia, "čakanie na katastrofu".' },
   { icon: '❄️', title: 'Freeze reakcie', desc: 'Zamrznutie v situáciách stresu. Neschopnosť konať alebo hovoriť, akoby vás telo paralyzovalo.' },
-  { icon: '🌀', title: 'Emočné preťaženie', desc: 'Reakcie, ktoré sú silnejšie ako situácia vyžaduje. Ľahká zápallivosť alebo naopak úplné otupenie.' },
+  { icon: '🌀', title: 'Emočné preťaženie', desc: 'Reakcie, ktoré sú silnejšie ako situácia vyžaduje. Ľahká zápalčivosť alebo naopak úplné otupenie.' },
   { icon: '🔇', title: 'Odpojenie od tela', desc: 'Pocit, že ste "mimo seba", nereálni, pohľad zhora. Telo ako cudzinec.' },
-  { icon: '💢', title: 'Chronické napätie', desc: 'Stuhnutá šija, bolesť ramenných kríži, napätie v čeľusti. Telo nesie to, čo myseľ "spracovala".' },
+  { icon: '💢', title: 'Chronické napätie', desc: 'Stuhnutá šija, bolesť krížov, napätie v čeľusti. Telo nesie to, čo myseľ "spracovala".' },
   { icon: '🧩', title: 'ADHD & dysregulácia', desc: 'Problémy s pozornosťou, impulzivitou, reguláciou energie. Nie charakter — stav nervového systému.' },
   { icon: '😶', title: 'Psychosomatika', desc: 'Bolesti bez organickej príčiny, syndróm dráždivého čreva, migrény, koža. Telo hovorí to, čo slová nevedia.' },
-  { icon: '💤', title: 'Poruchy spánku', desc: 'Problém so zaspávaním, nočné prebúdzanie, nenávratný spánok. Nervový systém stále "hliadkuje".' },
+  { icon: '💤', title: 'Poruchy spánku', desc: 'Problém so zaspávaním, nočné prebúdzanie, neosviežujúci spánok. Nervový systém stále "hliadkuje".' },
 ]
 
 export default function Symptoms() {

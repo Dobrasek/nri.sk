@@ -56,7 +56,7 @@ const activities = [
     color: '#c8980a',
     steps: [
       'FÁZA 1: Jemne trasite rukami a nohami dieťaťa ("tiger sa prebúdza")',
-      'FÁZA 2: Dlaňami gegen dlaniam — dieťa tlačí do vás ("ukáž svoju silu!")',
+      'FÁZA 2: Dlaňami proti dlaniam — dieťa tlačí do vás ("ukáž svoju silu!")',
       'FÁZA 3: Rýchly bicykel nohami ("tiger beží cez džungľu!")',
       'FÁZA 4: Spoločne zakričte silné "HA!" ("víťazný ryk tigra!")',
     ],

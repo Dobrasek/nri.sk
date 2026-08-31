@@ -17,7 +17,7 @@ const steps = [
     title: 'Energetická eskalácia',
     bpm: '133 BPM',
     song: 'The Prodigy — No Good',
-    desc: 'Rýchly elektronický rytmus eskaluje sympatický nervový systém. Celotelo sa aktivuje — príprava na maximálnu integráciu oboch hemisfér.',
+    desc: 'Rýchly elektronický rytmus eskaluje sympatický nervový systém. Celé telo sa aktivuje — príprava na maximálnu integráciu oboch hemisfér.',
     color: '#c8400a',
     emoji: '⚡',
   },
@@ -26,7 +26,7 @@ const steps = [
     title: 'Freeze Dance — brzda',
     bpm: '120 BPM',
     song: 'Rammstein — Du Hast',
-    desc: 'Frontálny lalok sa tréninguje inhibíciou — pohyb a stopka. Mozog sa učí prepínať medzi excitáciou a pokojom.',
+    desc: 'Frontálny lalok sa trénuje inhibíciou — pohyb a stopka. Mozog sa učí prepínať medzi excitáciou a pokojom.',
     color: '#5a2020',
     emoji: '🛑',
   },
@@ -41,7 +41,7 @@ const steps = [
   },
   {
     n: '05',
-    title: 'Hemisférová integrácia',
+    title: 'Hemisférická integrácia',
     bpm: '105 BPM',
     song: 'Linkin Park — In The End',
     desc: 'Skrížené pohyby rúk a nôh aktivujú corpus callosum. Ľavá a pravá hemisféra začínajú pracovať v tandeme.',
@@ -140,7 +140,7 @@ export default function TherapyProcess() {
             className="section-label text-[#2a9aa8] border border-[#2a9aa8]/25 mb-4"
             style={{ background: 'rgba(27,107,114,.1)' }}
           >
-            Protokol NRI
+            Protokol NRi
           </div>
           <h2 className="font-jakarta text-4xl md:text-5xl font-700 text-white mb-6">
             Ako prebieha sedenie

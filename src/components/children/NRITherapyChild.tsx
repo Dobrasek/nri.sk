@@ -4,8 +4,8 @@ import { NRiBrand } from '@/components/shared/NRiBrand'
 import BookingButton from '@/components/shared/BookingButton'
 
 const playlist = [
-  { n: '01', song: 'Queen — We Will Rock You', bpm: '110 BPM', goal: 'Bazálne gangliá', desc: 'Silné dup-dup-plesk. Bazálna ganglia stimulácia — filter pohybu.', color: '#4a3080' },
-  { n: '02', song: 'The Prodigy — No Good', bpm: '133 BPM', goal: 'Energia & Excitácia', desc: 'Rýchly rytmus! Celotelo v pohybe — preskakujeme, mávame, tanec bez hraníc.', color: '#c8400a' },
+  { n: '01', song: 'Queen — We Will Rock You', bpm: '110 BPM', goal: 'Bazálne gangliá', desc: 'Silné dup-dup-plesk. Stimulácia bazálnych ganglií — filter pohybu.', color: '#4a3080' },
+  { n: '02', song: 'The Prodigy — No Good', bpm: '133 BPM', goal: 'Energia & Excitácia', desc: 'Rýchly rytmus! Celé telo v pohybe — preskakujeme, mávame, tanec bez hraníc.', color: '#c8400a' },
   { n: '03', song: 'Rammstein — Du Hast', bpm: '120 BPM', goal: 'Freeze Dance', desc: 'Dynamické pohyby + STOPKA. Frontálny lalok — inhibícia impulzov.', color: '#c05a5a' },
   { n: '04', song: 'Imagine Dragons — Demons', bpm: '84 BPM', goal: 'Emócie & Limbický', desc: 'Pomalšie pohyby, mäkký rytmus. Pomenúvame emócie telom.', color: '#7a2d45' },
   { n: '05', song: 'Linkin Park — In The End', bpm: '105 BPM', goal: 'Prepojenie hemisfér', desc: 'Skrížené pohyby! Pravá ruka — ľavá noha. Prepájame obe strany mozgu.', color: '#2d5080' },
@@ -84,7 +84,7 @@ export default function NRITherapyChild() {
                   Keď nervový systém dieťaťa presne vie, čo príde, amygdala sa upokojuje. Prestáva vyhodnocovať hrozbu a otvára sa pre učenie a rast.
                 </p>
                 <p className="text-white/60 leading-relaxed">
-                  Po niekoľkých sedeniach mozog dieťaťa automaticky rozpozná prvé tóny skladby — a <em className="not-italic text-white/80">telo sa začne nastaľovať na daný typ pohybu ešte pred jeho začiatkom</em>. To je neuroplasticita v praxi.
+                  Po niekoľkých sedeniach mozog dieťaťa automaticky rozpozná prvé tóny skladby — a <em className="not-italic text-white/80">telo sa začne nastavovať na daný typ pohybu ešte pred jeho začiatkom</em>. To je neuroplasticita v praxi.
                 </p>
               </div>
               <div className="flex flex-col gap-3">

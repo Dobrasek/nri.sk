@@ -1,6 +1,6 @@
 ---
 title: "Prečo We Will Rock You trénuje mozog lepšie ako väčšina terapií"
-excerpt: "Queen, Rammstein, Evanescence — v NRI protokole nič nie je náhodné. Každá skladba je vybraná pre presné parametre, ktoré stimulujú konkrétnu časť mozgu."
+excerpt: "Queen, Rammstein, Evanescence — v NRi protokole nič nie je náhodné. Každá skladba je vybraná pre presné parametre, ktoré stimulujú konkrétnu časť mozgu."
 date: "2025-05-05"
 category: "veda"
 readTime: "5 min čítania"
@@ -10,13 +10,13 @@ readTime: "5 min čítania"
 
 Keď počujeme stabilný rytmus, mozog sa naň "naladí" — tento jav sa nazýva **neural entrainment** (nervová synchronizácia). Neuróny začnú firovať v rovnakom rytme ako externý zvuk.
 
-To nie je magia — je to biológia.
+To nie je mágia — je to biológia.
 
 ## Prečo 110 BPM na začiatok?
 
 Mozog potrebuje jasný signál, že sedenie začína. Queen — We Will Rock You (110 BPM) s primitívnym rytmom dup-dup-PLESK okamžite aktivuje bazálne gangliá a zorientuje nervový systém v priestore a čase.
 
-Preto začíname každé NRI sedenie práve touto skladbou. Bazálne gangliá sa "nastartujú" skôr, než si to vedomie stihne všimnúť.
+Preto začíname každé NRi sedenie práve touto skladbou. Bazálne gangliá sa "naštartujú" skôr, než si to vedomie stihne všimnúť.
 
 ## Prečo We Will Rock You pre bazálne gangliá?
 
@@ -32,4 +32,4 @@ Keď mozog trénuje "stopku" opakovane, prefrontálna kôra sa skutočne posilň
 
 ## Záver
 
-Hudba v NRI nie je kulisa. Je to regulačný nástroj — presne kalibrovaný na parametre nervového systému.
+Hudba v NRi nie je kulisa. Je to regulačný nástroj — presne kalibrovaný na parametre nervového systému.
