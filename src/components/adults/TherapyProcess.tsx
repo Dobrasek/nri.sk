@@ -23,12 +23,12 @@ const steps = [
   },
   {
     n: '03',
-    title: 'Freeze Dance — brzda',
+    title: 'Pohyb v tempe skladby',
     bpm: '120 BPM',
     song: 'Rammstein — Du Hast',
-    desc: 'Frontálny lalok sa trénuje inhibíciou — pohyb a stopka. Mozog sa učí prepínať medzi excitáciou a pokojom.',
+    desc: 'Pohyb rúk ako pri behu. Pri pomalšom tempe sa pohyb spomaľuje, pri rýchlejšom zrýchľuje — telo drží pohyb v tempe, ktoré počuje.',
     color: '#5a2020',
-    emoji: '🛑',
+    emoji: '🏃',
   },
   {
     n: '04',

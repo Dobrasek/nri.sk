@@ -312,7 +312,7 @@ export const kidsBrainRegions: BrainRegion[] = [
       '🎮 Freeze Dance — stopuj sa na signál',
       '🐯 Hra na tigra — tlačenie rúk',
       '🌊 Pomalý Tai-Ji pohyb',
-      '🎵 Rammstein stop hra',
+      '🎵 Imagine Dragons — ukazovanie STOP',
     ],
     nriTechniques: [
       'Freeze Dance tréning (frontálny lalok)',
@@ -346,7 +346,6 @@ export const kidsBrainRegions: BrainRegion[] = [
       'Vokálne tónovanie A-O-U',
       'Rytmické spevy slabík',
       'Hudobné zrkadlenie',
-      'LP — Lost On You (hvízdanie)',
     ],
   },
   {
@@ -371,7 +370,7 @@ export const kidsBrainRegions: BrainRegion[] = [
       '🌊 Masáž a hlboký dotyk',
     ],
     nriTechniques: [
-      'Rytmické klepanie tela (LP protokol)',
+      'Rytmické klepanie po tele',
       'Proprioceptívna stimulácia',
       'Hlboký dotyk a objatie',
       'Skrížené pohyby rúk',
