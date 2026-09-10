@@ -4,20 +4,19 @@ import { NRiBrand } from '@/components/shared/NRiBrand'
 import BookingButton from '@/components/shared/BookingButton'
 
 const playlist = [
-  { n: '01', song: 'Queen — We Will Rock You', bpm: '110 BPM', goal: 'Bazálne gangliá', desc: 'Silné dup-dup-plesk. Stimulácia bazálnych ganglií — filter pohybu.', color: '#4a3080' },
-  { n: '02', song: 'The Prodigy — No Good', bpm: '133 BPM', goal: 'Energia & Excitácia', desc: 'Rýchly rytmus! Celé telo v pohybe — preskakujeme, mávame, tanec bez hraníc.', color: '#c8400a' },
-  { n: '03', song: 'Rammstein — Du Hast', bpm: '120 BPM', goal: 'Freeze Dance', desc: 'Dynamické pohyby + STOPKA. Frontálny lalok — inhibícia impulzov.', color: '#c05a5a' },
-  { n: '04', song: 'Imagine Dragons — Demons', bpm: '84 BPM', goal: 'Emócie & Limbický', desc: 'Pomalšie pohyby, mäkký rytmus. Pomenúvame emócie telom.', color: '#7a2d45' },
-  { n: '05', song: 'Linkin Park — In The End', bpm: '105 BPM', goal: 'Prepojenie hemisfér', desc: 'Skrížené pohyby! Pravá ruka — ľavá noha. Prepájame obe strany mozgu.', color: '#2d5080' },
-  { n: '06', song: 'Evanescence — My Immortal', bpm: '55 BPM', goal: 'Tai-Ji & Rovnováha', desc: 'Extrémne pomalé "odhadzovanie loptičky". Mozoček a hlboká stabilita.', color: '#8060c0' },
-  { n: '07', song: 'Pharrell Williams — Happy', bpm: '160 BPM', goal: 'Radosť & Dopamín', desc: 'Najrýchlejšia pieseň! Skoky, otočky, smiech. Pohyb = radosť!', color: '#c8980a' },
-  { n: '08', song: 'Edith Piaf — Non, je ne regrette rien', bpm: '72 BPM', goal: 'Zrkadlenie & Emócie', desc: 'Jemné húpavé pohyby. Odborník kopíruje pohyby dieťaťa — budovanie dôvery.', color: '#7a4d25' },
-  { n: '09', song: 'LP — Lost On You', bpm: '68 BPM', goal: 'Mapa tela', desc: 'Rytmické vyklepávanie po častiach tela. Budovanie telesnej mapy.', color: '#3474b8' },
-  { n: '10', song: 'Gunčíková — I Stand', bpm: '74 BPM', goal: 'Sila & Sebaistota', desc: 'Veľké, silné pohyby! Stojím pevne na nohách. Budujeme telesný sebaobraz.', color: '#2b8a62' },
-  { n: '11', song: 'Robbie Williams — Angels', bpm: '76 BPM', goal: 'Bezpečie & Emócie', desc: 'Jemné objímavé pohyby. Cítim, že som v bezpečí a nie som sám.', color: '#8060c0' },
-  { n: '12', song: 'Lady Gaga — Hold My Hand', bpm: '67 BPM', goal: 'Naladenie & Spojenie', desc: 'Pohybujeme sa spolu, v rovnakom rytme. Sme spojení — to je bezpečie.', color: '#c87090' },
-  { n: '13', song: 'Alexandra Burke — Hallelujah', bpm: '70 BPM', goal: 'Integrácia & Pokoj', desc: 'Pomalé, hlboké pohyby. Všetko čo sme prežili, ukladáme do tela ako bezpečnú spomienku.', color: '#1a5060' },
-  { n: '14', song: 'The Piano Guys — O Come O Come Emmanuel', bpm: '50 BPM', goal: 'Záver & Ukotvenie', desc: 'Klbíčkovanie a kolísanie. Pevné zavinutie, hlboký tlak. Integrácia.', color: '#0d4060' },
+  { n: '01', song: 'Queen — We Will Rock You', bpm: '110 BPM', goal: 'Bazálne gangliá', desc: 'Tri jednoduché pohyby do rytmu: bucháme dlaňami na kolená, potom rukami krížom na ramená a následne tleskneme pred sebou. Sekvenciu opakujeme podľa rytmu skladby.', color: '#4a3080' },
+  { n: '02', song: 'The Prodigy — No Good', bpm: '133 BPM', goal: 'Energia & Excitácia', desc: 'Striedavý pohyb rúk ako pri boxovaní. Dieťa sedí oproti dospelému a ruky vedie cez kontakt s jeho dlaňami. Jedna ruka ide dopredu cez os tela, druhá zostáva pri hrudníku. Pri pomalšej časti sa mení poloha rúk a otáčajú sa zápästia, pri zrýchlení sa zrýchli aj pohyb.', color: '#c8400a' },
+  { n: '03', song: 'Rammstein — Du Hast', bpm: '120 BPM', goal: 'Striedavý pohyb & Kontakt', desc: 'Pohyb rúk ako pri behu. Dospelý drží obe ruky dieťaťa. Jedna ruka ide dopredu, druhá k telu a potom sa plynulo vymenia. Kontakt rúk zostáva počas celej sekvencie zachovaný.', color: '#c05a5a' },
+  { n: '04', song: 'Imagine Dragons — Demons', bpm: '84 BPM', goal: 'Emócie & Stopka', desc: 'Striedanie hojdania a aktívnejšieho pohybu. V pomalých častiach sa dieťa s dospelým pokojne hojdá zo strany na stranu. V dynamickejších častiach ukazuje rukou STOP.', color: '#7a2d45' },
+  { n: '05', song: 'Linkin Park — In The End', bpm: '105 BPM', goal: 'Prepojenie hemisfér', desc: 'Hojdanie a pohyb „zober a odhoď". V pokojnejšej časti sa hojdáme. Pri aktívnej časti pravá ruka prechádza k ľavému ramenu a pohybom odhadzuje doprava, ľavá ruka ide k pravému ramenu a odhadzuje doľava. Pohyby sa plynulo striedajú.', color: '#2d5080' },
+  { n: '06', song: 'Evanescence — My Immortal', bpm: '55 BPM', goal: 'Tai-Ji & Rovnováha', desc: 'Pomalý predklon a návrat do záklonu. Pohyb robíme veľmi pomaly, s podporou dospelého. Dieťa sa učí zostať v pohybe pokojné a kontrolovať jeho rýchlosť. Na začiatku stačí aj jedno kvalitné opakovanie.', color: '#8060c0' },
+  { n: '07', song: 'Pharrell Williams — Happy', bpm: '160 BPM', goal: 'Radosť & Dopamín', desc: 'Sekvencia tleskov vo dvojici: tlesk spolu → dieťa oboma rukami do dlaní dospelého → tlesk → pravá ruka do pravej dlane → tlesk → ľavá ruka do ľavej dlane. Na pokyn „otoč" nastaví jednu dlaň hore a druhú dole, ruky sa vymenia a záver tvorí vzájomný dotyk päsťami. Sekvencia sa opakuje do konca skladby.', color: '#c8980a' },
+  { n: '08', song: 'Edith Piaf — Non, je ne regrette rien', bpm: '72 BPM', goal: 'Emócie & Pokoj', desc: 'Jemné húpavé pohyby.', color: '#7a4d25' },
+  { n: '09', song: 'Gunčíková — I Stand', bpm: '74 BPM', goal: 'Opora & Vnímanie tela', desc: 'Dieťa zostáva v plachte, v bezpečnej a podporenej polohe. Pohyb je minimálny — pracuje sa s pokojom, oporou a vnímaním tela.', color: '#2b8a62' },
+  { n: '10', song: 'Robbie Williams — Angels', bpm: '76 BPM', goal: 'Bezpečie & Emócie', desc: 'Dieťa stále zostáva v plachte. Táto časť je pokojná, bez výraznej motorickej úlohy — ide o zotrvanie v kontakte, opore a bezpečnom telesnom priestore.', color: '#8060c0' },
+  { n: '11', song: 'Lady Gaga — Hold My Hand', bpm: '67 BPM', goal: 'Naladenie & Spojenie', desc: 'Dieťa zostáva v plachte a pokračuje pokojná spoločná regulácia.', color: '#c87090' },
+  { n: '12', song: 'Alexandra Burke — Hallelujah', bpm: '70 BPM', goal: 'Integrácia & Pokoj', desc: 'Pomalé, hlboké pohyby. Všetko čo sme prežili, ukladáme do tela ako bezpečnú spomienku.', color: '#1a5060' },
+  { n: '13', song: 'The Piano Guys — O Come O Come Emmanuel', bpm: '50 BPM', goal: 'Záver & Ukotvenie', desc: 'Klbíčkovanie a kolísanie. Pevné zavinutie, hlboký tlak. Integrácia.', color: '#0d4060' },
 ]
 
 export default function NRITherapyChild() {
