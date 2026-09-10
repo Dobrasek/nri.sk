@@ -88,10 +88,9 @@ export const adultsBrainRegions: BrainRegion[] = [
       'Taktilná stimulácia',
       'Proprioceptívne aktivity',
       'Rytmické klepanie po tele',
-      'LP — Lost On You (vyklepávanie)',
     ],
     nriTechniques: [
-      'Budovanie telesnej mapy (LP protokol)',
+      'Budovanie telesnej mapy',
       'Rytmické klepanie plecia → kolená',
       'Skrížené pohyby cez stredovú líniu',
       'Hlboký tlak a objatie',

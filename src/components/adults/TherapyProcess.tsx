@@ -77,15 +77,6 @@ const steps = [
   },
   {
     n: '09',
-    title: 'Mapa tela',
-    bpm: '68 BPM',
-    song: 'LP — Lost On You',
-    desc: 'Rytmické vyklepávanie aktivuje propriocepciu — telo spoznáva samé seba. Budovanie telesnej mapy ako základ pre sebareguláciu.',
-    color: '#3474b8',
-    emoji: '🗺️',
-  },
-  {
-    n: '10',
     title: 'Identita & sebaistota',
     bpm: '74 BPM',
     song: 'Gunčíková — I Stand',
@@ -94,7 +85,7 @@ const steps = [
     emoji: '🦋',
   },
   {
-    n: '11',
+    n: '10',
     title: 'Emočné ukotvenie',
     bpm: '76 BPM',
     song: 'Robbie Williams — Angels',
@@ -103,7 +94,7 @@ const steps = [
     emoji: '🕊️',
   },
   {
-    n: '12',
+    n: '11',
     title: 'Naladenie & spojenie',
     bpm: '67 BPM',
     song: 'Lady Gaga — Hold My Hand',
@@ -112,7 +103,7 @@ const steps = [
     emoji: '🤲',
   },
   {
-    n: '13',
+    n: '12',
     title: 'Hlboká integrácia',
     bpm: '70 BPM',
     song: 'Alexandra Burke — Hallelujah',
@@ -121,7 +112,7 @@ const steps = [
     emoji: '🌊',
   },
   {
-    n: '14',
+    n: '13',
     title: 'Ukotvenie & záver',
     bpm: '50 BPM',
     song: 'The Piano Guys — O Come O Come Emmanuel',
