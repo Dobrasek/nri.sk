@@ -24,11 +24,11 @@ Primitívny rytmus **dup-dup-PLESK** je pre bazálne gangliá ako priama injekci
 
 Bazálne gangliá pracujú najlepšie na 100–120 BPM — a We Will Rock You je na 104 BPM s maximálne predvídateľným bicím vzorcom.
 
-## Prečo Rammstein pre Freeze Dance?
+## Prečo Rammstein pre striedavý pohyb?
 
-Du Hast má strojový, militantný rytmus — a náhle ticho, keď hudba prestane. Tento kontrast je perfektný pre tréning frontálneho laloka: pohyb → stopka → pohyb.
+Du Hast má strojový, presne čitateľný rytmus a zreteľné zmeny tempa. Pohyb rúk ako pri behu sa v pomalšej časti spomaľuje a v rýchlejšej zrýchľuje — telo musí pohyb neustále doťahovať k tempu, ktoré počuje.
 
-Keď mozog trénuje "stopku" opakovane, prefrontálna kôra sa skutočne posilňuje — neuroplasticita v praxi.
+Nie je to zastavenie, ale plynulá regulácia rýchlosti podľa vonkajšieho signálu. Opakovaním sa tá regulácia zafixuje — neuroplasticita v praxi.
 
 ## Záver
 
