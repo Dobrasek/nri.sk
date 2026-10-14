@@ -5,6 +5,10 @@ import AnimatedSection from '@/components/shared/AnimatedSection'
 import { ObfuscatedEmail } from '@/components/shared/ObfuscatedEmail'
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle, AlertCircle } from 'lucide-react'
 
+// Dočasne vypnuté — odoslanie zlyháva (chýbajú SMARTEMAILING_* na Verceli).
+// Po oprave prepnúť na false.
+const FORM_DISABLED = true
+
 export default function KontaktPage() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
   const [errorMsg, setErrorMsg] = useState('')
@@ -148,7 +152,25 @@ export default function KontaktPage() {
 
           {/* Form */}
           <AnimatedSection direction="right">
-            {status === 'sent' ? (
+            {FORM_DISABLED ? (
+              <div className="glass-card p-10 flex flex-col items-center justify-center text-center h-full min-h-[400px]">
+                <Phone className="w-12 h-12 text-[#2a9aa8] mb-5" />
+                <h2 className="font-jakarta font-700 text-white text-2xl mb-3">
+                  Formulár je dočasne vypnutý
+                </h2>
+                <p className="text-white/55 leading-relaxed mb-5">
+                  Napíšte nám e-mail alebo zavolajte, radi sa vám ozveme.
+                </p>
+                <a href="tel:+421914202306" className="text-white hover:text-[#2a9aa8] font-semibold transition-colors mb-2">
+                  +421 914 202 306
+                </a>
+                <ObfuscatedEmail
+                  user="info"
+                  domain="nri.sk"
+                  className="text-white/65 hover:text-white text-sm transition-colors"
+                />
+              </div>
+            ) : status === 'sent' ? (
               <div className="glass-card p-10 flex flex-col items-center justify-center text-center h-full min-h-[400px]">
                 <CheckCircle className="w-16 h-16 text-[#2b8a62] mb-5" />
                 <h2 className="font-jakarta font-700 text-white text-2xl mb-3">
