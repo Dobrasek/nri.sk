@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { ClerkProvider } from '@clerk/nextjs'
 import { Plus_Jakarta_Sans, Inter } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
@@ -34,9 +35,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="sk" className={`${jakarta.variable} ${inter.variable}`} suppressHydrationWarning>
       <body className="min-h-screen overflow-x-hidden">
-        <Navigation />
-        <main>{children}</main>
-        <Footer />
+        {/* ClerkProvider musí byť vnútri <body>, nie okolo <html>. Zámerne bez
+            `dynamic` — inak by sa každá verejná stránka renderovala na požiadanie
+            a web by prišiel o statické generovanie. Stav prihlásenia rieši
+            navigácia na klientovi, stránky členskej sekcie si `auth()` volajú samy. */}
+        <ClerkProvider signInUrl="/prihlasenie" signUpUrl="/registracia">
+          <Navigation />
+          <main>{children}</main>
+          <Footer />
+        </ClerkProvider>
       </body>
     </html>
   )
