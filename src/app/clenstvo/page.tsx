@@ -8,7 +8,7 @@ import { PACKETS, TIER_META, TIERS, formatPrice } from '@/lib/clenstvo/packages'
 import { getMyTiers } from '@/lib/clenstvo/access'
 
 export const metadata: Metadata = {
-  title: 'Členská sekcia — NRi | Teória, Deti, Dospelí',
+  title: 'Členská sekcia — NRi | Teória, Deti, Dospelí, Školský protokol',
   description:
     'Uzavretá členská sekcia NRi — teoretický základ, práca s dieťaťom a práca s dospelým. Videá, PDF materiály, hudba a návody na jednom mieste.',
 }
@@ -60,8 +60,8 @@ export default async function ClenstvoPage() {
             </AnimatedSection>
           )}
 
-          {/* Tri stupne */}
-          <AnimatedSection delay={100} className="grid md:grid-cols-3 gap-5 mb-16">
+          {/* Stupne */}
+          <AnimatedSection delay={100} className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
             {TIERS.map(tier => {
               const meta = TIER_META[tier]
               const unlocked = owned.includes(tier)

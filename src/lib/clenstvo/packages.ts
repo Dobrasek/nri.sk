@@ -1,13 +1,14 @@
 /**
  * Členská sekcia — stupne a predajné balíčky.
  *
- * Stupne sú tri, ale balíčkov je viac než stupňov: teória sa pribaľuje zadarmo
+ * Stupne sú štyri (školský protokol sa zatiaľ nepredáva, len prideľuje ručne),
+ * balíčkov je viac než predávaných stupňov: teória sa pribaľuje zadarmo
  * ku všetkému, a deti+dospelí sa dajú kúpiť spolu lacnejšie. Preto sa
  * `grants` drží pri balíčku, nie pri stupni — čo kto vidí, je vždy zjednotenie
  * `grants` všetkých balíčkov, ktoré si kúpil.
  */
 
-export const TIERS = ['teoria', 'deti', 'dospeli'] as const
+export const TIERS = ['teoria', 'deti', 'dospeli', 'skolsky-protokol'] as const
 export type Tier = (typeof TIERS)[number]
 
 export interface TierMeta {
@@ -40,6 +41,13 @@ export const TIER_META: Record<Tier, TierMeta> = {
     perex: 'Špecifiká práce s dospelým — video návody, hudba, PDF dokumenty.',
     theme: 'adults',
     accent: '#7a2d45',
+  },
+  'skolsky-protokol': {
+    slug: 'skolsky-protokol',
+    name: 'Školský protokol',
+    perex: 'Skrátená verzia protokolu pre školské prostredie.',
+    theme: 'adults',
+    accent: '#c08a3e',
   },
 }
 

@@ -1,6 +1,6 @@
 # Obsah členskej sekcie
 
-Každý stupeň má vlastný priečinok — `teoria/`, `deti/`, `dospeli/`. Jeden `.md` súbor
+Každý stupeň má vlastný priečinok — `teoria/`, `deti/`, `dospeli/`, `skolsky-protokol/`. Jeden `.md` súbor
 je jedna lekcia. Názov súboru je adresa lekcie, takže `ranna-rutina.md` bude na
 `/clenstvo/deti/ranna-rutina`.
 

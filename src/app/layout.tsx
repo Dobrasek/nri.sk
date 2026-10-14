@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { ClerkProvider } from '@clerk/nextjs'
+import { skSK } from '@clerk/localizations'
 import { Plus_Jakarta_Sans, Inter } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
@@ -39,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             `dynamic` — inak by sa každá verejná stránka renderovala na požiadanie
             a web by prišiel o statické generovanie. Stav prihlásenia rieši
             navigácia na klientovi, stránky členskej sekcie si `auth()` volajú samy. */}
-        <ClerkProvider signInUrl="/prihlasenie" signUpUrl="/registracia">
+        <ClerkProvider localization={skSK} signInUrl="/prihlasenie" signUpUrl="/registracia">
           <Navigation />
           <main>{children}</main>
           <Footer />
