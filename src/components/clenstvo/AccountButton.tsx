@@ -1,17 +1,17 @@
 'use client'
 
 import { useState } from 'react'
-import { KeyRound } from 'lucide-react'
+import { createPortal } from 'react-dom'
+import { Fingerprint, X } from 'lucide-react'
 import { UserButton, useUser } from '@clerk/nextjs'
 
 /**
- * Záložka „Prístup“ v okne Spravovať účet — ukazuje ID používateľa, ktoré nám
- * člen pošle, aby sme mu ručne odomkli lekcie. Po spustení platieb sa dá zrušiť.
+ * Položka „Moje ID“ v menu účtu — ukáže ID používateľa, ktoré nám člen pošle,
+ * aby sme mu ručne odomkli lekcie. Vlastné okno namiesto záložky v okne Clerku,
+ * lebo to sa v Safari nevykreslilo. Po spustení platieb sa dá zrušiť.
  */
-function UserIdPanel() {
-  const { user } = useUser()
+function UserIdDialog({ id, onClose }: { id: string; onClose: () => void }) {
   const [copied, setCopied] = useState(false)
-  const id = user?.id ?? ''
 
   async function copy() {
     try {
@@ -23,35 +23,39 @@ function UserIdPanel() {
     }
   }
 
-  return (
-    <div>
-      <h1 style={{ fontSize: '1.125rem', fontWeight: 600, marginBottom: '0.75rem' }}>
-        Prístup k obsahu
-      </h1>
-      <p style={{ fontSize: '0.875rem', opacity: 0.75, marginBottom: '1rem' }}>
-        Ak vám máme odomknúť lekcie ručne, pošlite nám toto ID:
-      </p>
-      <code
-        style={{
-          display: 'block',
-          padding: '0.75rem',
-          borderRadius: '0.5rem',
-          background: 'rgba(0,0,0,.06)',
-          fontSize: '0.875rem',
-          wordBreak: 'break-all',
-          userSelect: 'all',
-        }}
+  return createPortal(
+    <div
+      className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-black/70"
+      onClick={onClose}
+    >
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-label="Moje ID"
+        className="relative w-full max-w-md rounded-2xl border border-white/10 bg-[#121e31] p-8 text-center"
+        onClick={e => e.stopPropagation()}
       >
-        {id}
-      </code>
-      <button
-        type="button"
-        onClick={copy}
-        style={{ marginTop: '0.75rem', fontSize: '0.875rem', fontWeight: 600, cursor: 'pointer' }}
-      >
-        {copied ? 'Skopírované ✓' : 'Skopírovať ID'}
-      </button>
-    </div>
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Zavrieť"
+          className="absolute top-4 right-4 text-white/50 hover:text-white"
+        >
+          <X className="w-5 h-5" />
+        </button>
+        <p className="font-jakarta font-semibold text-white mb-2">Moje ID</p>
+        <p className="text-sm text-white/65 mb-5">
+          Ak vám máme odomknúť lekcie ručne, pošlite nám toto ID:
+        </p>
+        <p className="font-mono text-sm text-white break-all select-all rounded-lg bg-white/[.06] p-3">
+          {id}
+        </p>
+        <button type="button" onClick={copy} className="btn-primary mt-5 w-full justify-center">
+          {copied ? 'Skopírované ✓' : 'Skopírovať ID'}
+        </button>
+      </div>
+    </div>,
+    document.body,
   )
 }
 
@@ -61,18 +65,24 @@ interface Props {
 }
 
 export default function AccountButton({ avatarClass, accent }: Props) {
+  const { user } = useUser()
+  const [open, setOpen] = useState(false)
+
   return (
-    <UserButton
-      appearance={{ elements: { avatarBox: avatarClass } }}
-      userProfileProps={accent ? { appearance: { variables: { colorPrimary: accent } } } : undefined}
-    >
-      <UserButton.UserProfilePage
-        label="Prístup"
-        url="pristup"
-        labelIcon={<KeyRound size={16} />}
+    <>
+      <UserButton
+        appearance={{ elements: { avatarBox: avatarClass } }}
+        userProfileProps={accent ? { appearance: { variables: { colorPrimary: accent } } } : undefined}
       >
-        <UserIdPanel />
-      </UserButton.UserProfilePage>
-    </UserButton>
+        <UserButton.MenuItems>
+          <UserButton.Action
+            label="Moje ID"
+            labelIcon={<Fingerprint size={16} />}
+            onClick={() => setOpen(true)}
+          />
+        </UserButton.MenuItems>
+      </UserButton>
+      {open && user && <UserIdDialog id={user.id} onClose={() => setOpen(false)} />}
+    </>
   )
 }
