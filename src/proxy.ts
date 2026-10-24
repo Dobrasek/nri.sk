@@ -9,9 +9,14 @@ import { TIERS } from '@/lib/clenstvo/packages'
 // namiesto chyby. Route si prihlásenie overuje sama a vracia 401 v JSON.
 const isProtectedRoute = createRouteMatcher(TIERS.map(tier => `/clenstvo/${tier}(.*)`))
 
-export default clerkMiddleware(async (auth, req) => {
-  if (isProtectedRoute(req)) await auth.protect()
-})
+// Adresy prihlásenia sú tu napevno — bez nich `auth.protect()` nevie, kam
+// presmerovať, a neprihlásenému vráti 404 (`protect-rewrite`).
+export default clerkMiddleware(
+  async (auth, req) => {
+    if (isProtectedRoute(req)) await auth.protect()
+  },
+  { signInUrl: '/prihlasenie', signUpUrl: '/registracia' },
+)
 
 export const config = {
   matcher: [
