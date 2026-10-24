@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X, Brain, LogIn } from 'lucide-react'
-import { Show, UserButton } from '@clerk/nextjs'
+import { Show } from '@clerk/nextjs'
+import AccountButton from '@/components/clenstvo/AccountButton'
 import { cn } from '@/lib/utils'
 import { NRiBrand } from '@/components/shared/NRiBrand'
 import { BookingDialog } from '@/components/shared/BookingButton'
@@ -90,10 +91,7 @@ export default function Navigation() {
             </Link>
           </Show>
           <Show when="signed-in">
-            <UserButton
-              appearance={{ elements: { avatarBox: 'w-9 h-9' } }}
-              userProfileProps={{ appearance: { variables: { colorPrimary: accent } } }}
-            />
+            <AccountButton avatarClass="w-9 h-9" accent={accent} />
           </Show>
         <button
           type="button"
@@ -148,7 +146,7 @@ export default function Navigation() {
             </Show>
             <Show when="signed-in">
               <div className="px-4 py-3 flex items-center gap-3">
-                <UserButton appearance={{ elements: { avatarBox: 'w-8 h-8' } }} />
+                <AccountButton avatarClass="w-8 h-8" />
                 <span className="text-sm font-jakarta text-white/70">Môj účet</span>
               </div>
             </Show>
