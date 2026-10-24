@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             `dynamic` — inak by sa každá verejná stránka renderovala na požiadanie
             a web by prišiel o statické generovanie. Stav prihlásenia rieši
             navigácia na klientovi, stránky členskej sekcie si `auth()` volajú samy. */}
-        <ClerkProvider localization={skSK} signInUrl="/prihlasenie" signUpUrl="/registracia">
+        <ClerkProvider localization={{ ...skSK, formFieldInputPlaceholder__signUpPassword: 'Vytvorte si heslo' }} signInUrl="/prihlasenie" signUpUrl="/registracia">
           <Navigation />
           <main>{children}</main>
           <Footer />
