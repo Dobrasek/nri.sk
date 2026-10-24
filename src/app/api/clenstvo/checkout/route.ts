@@ -1,6 +1,6 @@
 import { NextResponse, type NextRequest } from 'next/server'
 import { auth, currentUser } from '@clerk/nextjs/server'
-import { getPacket } from '@/lib/clenstvo/packages'
+import { getPacket, PURCHASE_DISABLED } from '@/lib/clenstvo/packages'
 import { stripe, findPriceId } from '@/lib/clenstvo/stripe'
 import { getTiersForUser } from '@/lib/clenstvo/access'
 
@@ -11,6 +11,10 @@ function suffix(): string {
 }
 
 export async function POST(req: NextRequest) {
+  if (PURCHASE_DISABLED) {
+    return NextResponse.json({ error: 'Nákup zatiaľ nie je dostupný.' }, { status: 503 })
+  }
+
   const { userId } = await auth()
   if (!userId) {
     return NextResponse.json({ error: 'Musíte byť prihlásený.' }, { status: 401 })

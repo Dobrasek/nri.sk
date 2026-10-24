@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { useAuth } from '@clerk/nextjs'
 import { ArrowRight, Loader2 } from 'lucide-react'
+import { PURCHASE_DISABLED } from '@/lib/clenstvo/packages'
 
 interface Props {
   packetSlug: string
@@ -39,6 +40,19 @@ export default function BuyButton({ packetSlug, label, kids }: Props) {
       setError(err instanceof Error ? err.message : 'Platbu sa nepodarilo otvoriť.')
       setBusy(false)
     }
+  }
+
+  if (PURCHASE_DISABLED) {
+    return (
+      <div>
+        <button
+          disabled
+          className={`btn-primary w-full justify-center ${kids ? 'btn-kids' : ''} opacity-50 cursor-not-allowed`}
+        >
+          Čoskoro k dispozícii
+        </button>
+      </div>
+    )
   }
 
   return (

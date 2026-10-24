@@ -113,3 +113,9 @@ export function formatPrice(amount: number): string {
   const whole = amount / 100
   return `${Number.isInteger(whole) ? whole : whole.toFixed(2)} €`
 }
+
+/**
+ * Nákup je dočasne vypnutý — Stripe beží ešte v sandboxe. Po prepnutí na ostré
+ * kľúče a webhook (viď scripts/stripe-setup.mjs) prepnúť na false.
+ */
+export const PURCHASE_DISABLED = true
