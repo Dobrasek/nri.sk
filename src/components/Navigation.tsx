@@ -145,6 +145,17 @@ export default function Navigation() {
             )}
           </div>
 
+          <Link
+            href="/clenstvo"
+            className={cn(
+              'flex items-center gap-1.5 px-3 py-2 text-sm font-jakarta font-medium rounded-lg transition-all',
+              pathname.startsWith('/clenstvo')
+                ? 'text-white bg-white/10'
+                : 'text-white/60 hover:text-white hover:bg-white/6'
+            )}
+          >
+            <KeyRound className="w-4 h-4" /> Členská sekcia
+          </Link>
           <Show when="signed-out">
             <Link
               href="/prihlasenie"
@@ -154,17 +165,6 @@ export default function Navigation() {
             </Link>
           </Show>
           <Show when="signed-in">
-            <Link
-              href="/clenstvo"
-              className={cn(
-                'flex items-center gap-1.5 px-3 py-2 text-sm font-jakarta font-medium rounded-lg transition-all',
-                pathname.startsWith('/clenstvo')
-                  ? 'text-white bg-white/10'
-                  : 'text-white/60 hover:text-white hover:bg-white/6'
-              )}
-            >
-              <KeyRound className="w-4 h-4" /> Členská sekcia
-            </Link>
             <AccountButton avatarClass="w-9 h-9" accent={accent} />
           </Show>
           <button
@@ -222,23 +222,23 @@ export default function Navigation() {
                 </Link>
               )
             )}
+            <Link
+              href="/clenstvo"
+              onClick={() => setOpen(false)}
+              className="flex items-center gap-2 px-4 py-3 mt-1 text-sm font-jakarta font-medium text-white/70 hover:text-white rounded-lg hover:bg-white/6 transition-all"
+            >
+              <KeyRound className="w-4 h-4" /> Členská sekcia
+            </Link>
             <Show when="signed-out">
               <Link
                 href="/prihlasenie"
                 onClick={() => setOpen(false)}
-                className="flex items-center gap-2 px-4 py-3 mt-1 text-sm font-jakarta font-medium text-white/70 hover:text-white rounded-lg hover:bg-white/6 transition-all"
+                className="flex items-center gap-2 px-4 py-3 text-sm font-jakarta font-medium text-white/70 hover:text-white rounded-lg hover:bg-white/6 transition-all"
               >
                 <LogIn className="w-4 h-4" /> Prihlásiť sa
               </Link>
             </Show>
             <Show when="signed-in">
-              <Link
-                href="/clenstvo"
-                onClick={() => setOpen(false)}
-                className="flex items-center gap-2 px-4 py-3 mt-1 text-sm font-jakarta font-medium text-white/70 hover:text-white rounded-lg hover:bg-white/6 transition-all"
-              >
-                <KeyRound className="w-4 h-4" /> Členská sekcia
-              </Link>
               <div className="px-4 py-3 flex items-center gap-3">
                 <AccountButton avatarClass="w-8 h-8" />
                 <span className="text-sm font-jakarta text-white/70">Môj účet</span>

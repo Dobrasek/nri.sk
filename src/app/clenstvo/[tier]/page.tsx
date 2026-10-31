@@ -22,7 +22,7 @@ export default async function TierPage({ params }: Props) {
   // Middleware overí, že je používateľ prihlásený; tu sa overuje, či na tento
   // konkrétny stupeň má nárok.
   const owned = await getMyTiers()
-  if (!owned.includes(tier)) redirect('/clenstvo')
+  if (!owned.includes(tier)) redirect('/clenstvo?prehlad')
 
   const meta = TIER_META[tier]
   const lessons = getLessons(tier)
@@ -33,7 +33,7 @@ export default async function TierPage({ params }: Props) {
     <div className={`${themeClass} ${bg} min-h-screen pt-32 pb-24 px-6`}>
       <div className="max-w-4xl mx-auto">
         <Link
-          href="/clenstvo"
+          href="/clenstvo?prehlad"
           className="inline-flex items-center gap-2 text-white/40 hover:text-white text-sm mb-10 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" /> Späť na členskú sekciu
