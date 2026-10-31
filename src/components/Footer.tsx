@@ -48,7 +48,7 @@ export default function Footer() {
               {[
                 ['Pre dospelých', '/dospeli'],
                 ['Pre deti & rodičov', '/deti'],
-                ['Výcvik NRi Practitioner', '/vycvik'],
+                ['Pre terapeutov', '/vycvik'],
                 ['Ako prebieha sedenie', '/dospeli#sedenie'],
                 ['FAQ', '/dospeli#faq'],
               ].map(([label, href]) => (
@@ -58,6 +58,11 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <span aria-disabled="true" className="text-white/20 text-sm cursor-not-allowed select-none">
+                  Pre rodičov
+                </span>
+              </li>
             </ul>
           </div>
 

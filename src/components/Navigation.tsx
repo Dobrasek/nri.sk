@@ -10,12 +10,13 @@ import { cn } from '@/lib/utils'
 import { NRiBrand } from '@/components/shared/NRiBrand'
 import { BookingDialog } from '@/components/shared/BookingButton'
 
-const navLinks = [
+const navLinks: { href: string; label: string; disabled?: boolean }[] = [
   { href: '/dospeli', label: 'Pre dospelých' },
   { href: '/deti', label: 'Pre deti & rodičov' },
   { href: '/blog', label: 'Blog' },
   { href: '/materialy', label: 'Materiály' },
-  { href: '/vycvik', label: 'Výcvik' },
+  { href: '/vycvik', label: 'Pre terapeutov' },
+  { href: '/rodicia', label: 'Pre rodičov', disabled: true },
   { href: '/clenstvo', label: 'Členská sekcia' },
   { href: '/kontakt', label: 'Kontakt' },
 ]
@@ -65,7 +66,16 @@ export default function Navigation() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-1">
-          {navLinks.map(link => (
+          {navLinks.map(link => link.disabled ? (
+            <span
+              key={link.href}
+              aria-disabled="true"
+              title="Čoskoro"
+              className="px-4 py-2 text-sm font-medium font-jakarta text-white/25 cursor-not-allowed select-none"
+            >
+              {link.label}
+            </span>
+          ) : (
             <Link
               key={link.href}
               href={link.href}
@@ -121,7 +131,15 @@ export default function Navigation() {
       {open && (
         <div className="md:hidden bg-[#0b1524]/98 backdrop-blur-xl border-t border-white/8">
           <nav className="px-6 py-4 flex flex-col gap-1">
-            {navLinks.map(link => (
+            {navLinks.map(link => link.disabled ? (
+              <span
+                key={link.href}
+                aria-disabled="true"
+                className="px-4 py-3 text-sm font-jakarta font-medium text-white/25 cursor-not-allowed select-none"
+              >
+                {link.label}
+              </span>
+            ) : (
               <Link
                 key={link.href}
                 href={link.href}
