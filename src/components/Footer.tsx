@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Brain, Mail, Phone, MapPin } from 'lucide-react'
-import { NRiBrand } from '@/components/shared/NRiBrand'
+import { NRiBrand, renderNRi } from '@/components/shared/NRiBrand'
 import { ObfuscatedEmail } from '@/components/shared/ObfuscatedEmail'
 import BookingButton from '@/components/shared/BookingButton'
 
@@ -48,15 +48,21 @@ export default function Footer() {
               {[
                 ['Pre dospelých', '/dospeli'],
                 ['Pre deti & rodičov', '/deti'],
+                ['Pre NRi praktikov', '/vycvik'],
                 ['Ako prebieha sedenie', '/dospeli#sedenie'],
                 ['FAQ', '/dospeli#faq'],
               ].map(([label, href]) => (
                 <li key={href}>
                   <Link href={href} className="text-white/45 hover:text-white/75 text-sm transition-colors">
-                    {label}
+                    {renderNRi(label)}
                   </Link>
                 </li>
               ))}
+              <li>
+                <span aria-disabled="true" className="text-white/20 text-sm cursor-not-allowed select-none">
+                  Pre rodičov
+                </span>
+              </li>
             </ul>
           </div>
 
