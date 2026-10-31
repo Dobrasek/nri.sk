@@ -22,7 +22,7 @@ export default async function LessonPage({ params }: Props) {
   if (!isTier(tier)) notFound()
 
   const owned = await getMyTiers()
-  if (!owned.includes(tier)) redirect('/clenstvo')
+  if (!owned.includes(tier)) redirect('/clenstvo?prehlad')
 
   const lesson = getLesson(tier, slug)
   if (!lesson) notFound()

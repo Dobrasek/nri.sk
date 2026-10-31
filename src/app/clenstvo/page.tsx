@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { redirect } from 'next/navigation'
 import { Check, Lock } from 'lucide-react'
 import AnimatedSection from '@/components/shared/AnimatedSection'
 import { NRiBrand } from '@/components/shared/NRiBrand'
 import BuyButton from '@/components/clenstvo/BuyButton'
-import { PACKETS, TIER_META, TIERS, formatPrice } from '@/lib/clenstvo/packages'
+import { PACKETS, PURCHASE_DISABLED, TIER_META, TIERS, formatPrice } from '@/lib/clenstvo/packages'
 import { getMyTiers } from '@/lib/clenstvo/access'
 
 export const metadata: Metadata = {
@@ -13,8 +14,20 @@ export const metadata: Metadata = {
     'Uzavretá členská sekcia NRi — teoretický základ, práca s dieťaťom a práca s dospelým. Videá, PDF materiály, hudba a návody na jednom mieste.',
 }
 
-export default async function ClenstvoPage() {
+export default async function ClenstvoPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ prehlad?: string }>
+}) {
   const owned = await getMyTiers()
+  const { prehlad } = await searchParams
+
+  // Kto má odomknutý práve jeden stupeň, ide rovno naň. Prehľad ostáva dostupný
+  // cez `?prehlad` (späť zo stupňa), inak by to bola slučka.
+  if (owned.length === 1 && prehlad === undefined) redirect(`/clenstvo/${owned[0]}`)
+
+  // Kým je nákup vypnutý, nemá zmysel ukazovať cenník tomu, kto už niečo má.
+  const showOffer = owned.length === 0 || !PURCHASE_DISABLED
 
   return (
     <div className="theme-adults min-h-screen">
@@ -88,6 +101,7 @@ export default async function ClenstvoPage() {
           </AnimatedSection>
 
           {/* Balíčky */}
+          {showOffer && (
           <AnimatedSection delay={200}>
             <h2 className="font-jakarta text-2xl font-bold text-white text-center mb-3">
               Vyberte si prístup
@@ -145,6 +159,7 @@ export default async function ClenstvoPage() {
               Máte od nás zľavový kód? Zadáte ho na platobnej stránke.
             </p>
           </AnimatedSection>
+          )}
         </div>
       </section>
     </div>
