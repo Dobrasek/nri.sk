@@ -73,6 +73,7 @@ export default function Footer() {
                 ['Blog', '/blog'],
                 ['PDF Materiály', '/materialy'],
                 ['Checklisty', '/materialy#checklisty'],
+                ['Kontakt', '/kontakt'],
               ].map(([label, href]) => (
                 <li key={href}>
                   <Link href={href} className="text-white/45 hover:text-white/75 text-sm transition-colors">
