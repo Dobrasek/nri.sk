@@ -15,6 +15,7 @@ const navLinks = [
   { href: '/deti', label: 'Pre deti & rodičov' },
   { href: '/blog', label: 'Blog' },
   { href: '/materialy', label: 'Materiály' },
+  { href: '/vycvik', label: 'Výcvik' },
   { href: '/clenstvo', label: 'Členská sekcia' },
   { href: '/kontakt', label: 'Kontakt' },
 ]

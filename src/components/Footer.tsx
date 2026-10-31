@@ -48,6 +48,7 @@ export default function Footer() {
               {[
                 ['Pre dospelých', '/dospeli'],
                 ['Pre deti & rodičov', '/deti'],
+                ['Výcvik NRi Practitioner', '/vycvik'],
                 ['Ako prebieha sedenie', '/dospeli#sedenie'],
                 ['FAQ', '/dospeli#faq'],
               ].map(([label, href]) => (
