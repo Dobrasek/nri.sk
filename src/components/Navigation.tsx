@@ -7,7 +7,7 @@ import { Menu, X, Brain, LogIn } from 'lucide-react'
 import { Show } from '@clerk/nextjs'
 import AccountButton from '@/components/clenstvo/AccountButton'
 import { cn } from '@/lib/utils'
-import { NRiBrand } from '@/components/shared/NRiBrand'
+import { NRiBrand, renderNRi } from '@/components/shared/NRiBrand'
 import { BookingDialog } from '@/components/shared/BookingButton'
 
 const navLinks: { href: string; label: string; disabled?: boolean }[] = [
@@ -15,7 +15,7 @@ const navLinks: { href: string; label: string; disabled?: boolean }[] = [
   { href: '/deti', label: 'Pre deti & rodičov' },
   { href: '/blog', label: 'Blog' },
   { href: '/materialy', label: 'Materiály' },
-  { href: '/vycvik', label: 'Pre terapeutov' },
+  { href: '/vycvik', label: 'Pre NRi praktikov' },
   { href: '/rodicia', label: 'Pre rodičov', disabled: true },
   { href: '/clenstvo', label: 'Členská sekcia' },
   { href: '/kontakt', label: 'Kontakt' },
@@ -73,7 +73,7 @@ export default function Navigation() {
               title="Čoskoro"
               className="px-4 py-2 text-sm font-medium font-jakarta text-white/25 cursor-not-allowed select-none"
             >
-              {link.label}
+              {renderNRi(link.label)}
             </span>
           ) : (
             <Link
@@ -86,7 +86,7 @@ export default function Navigation() {
                   : 'text-white/60 hover:text-white hover:bg-white/6'
               )}
             >
-              {link.label}
+              {renderNRi(link.label)}
             </Link>
           ))}
         </nav>
@@ -137,7 +137,7 @@ export default function Navigation() {
                 aria-disabled="true"
                 className="px-4 py-3 text-sm font-jakarta font-medium text-white/25 cursor-not-allowed select-none"
               >
-                {link.label}
+                {renderNRi(link.label)}
               </span>
             ) : (
               <Link
@@ -151,7 +151,7 @@ export default function Navigation() {
                     : 'text-white/70 hover:text-white hover:bg-white/6'
                 )}
               >
-                {link.label}
+                {renderNRi(link.label)}
               </Link>
             ))}
             <Show when="signed-out">
