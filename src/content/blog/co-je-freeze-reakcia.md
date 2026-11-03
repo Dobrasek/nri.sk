@@ -1,4 +1,5 @@
 ---
+id: "blog-01"
 title: "Čo je freeze reakcia a prečo vás paralyzuje v najdôležitejších momentoch"
 excerpt: "Freeze — zamrznutie — je najmenej pochopená reakcia nervového systému. Nie je to zbabelosť ani slabosť. Je to starodávna obranná stratégia mozgu, ktorá vás kedysi zachránila."
 date: "2025-04-15"

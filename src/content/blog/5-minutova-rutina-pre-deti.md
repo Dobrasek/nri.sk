@@ -1,4 +1,5 @@
 ---
+id: "blog-02"
 title: "5-minútová ranná rutina, ktorá zmení váš deň (aj deň vášho dieťaťa)"
 excerpt: "Tieto pohyby sú navrhnuté tak, aby pred školou prebudili mozoček a frontálnu kôru, zatiaľ čo upokoja amygdalu. Trvá to 5 minút — a výsledky uvidíte od prvého dňa."
 date: "2025-04-28"

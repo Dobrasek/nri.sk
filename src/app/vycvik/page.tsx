@@ -358,12 +358,14 @@ export default function VycvikPage() {
               <div className="glass-card p-5 opacity-70">
                 <p className="font-jakarta font-semibold text-white">1. – 5. februára 2027</p>
                 <p className="text-sm mt-1" style={{ color: WARM }}>
-                  Vypredané
+                  Plne obsadené
                 </p>
+                <p className="text-sm mt-1 text-white/45">Obsadené 8/8 · náhradníci 0/2</p>
+                <p className="text-sm mt-1 text-white/60">Na tento termín sa môžete prihlásiť ako náhradník.</p>
               </div>
               <div className="glass-card p-5 ring-1 ring-[#2a9aa8]/40">
                 <p className="font-jakarta font-semibold text-white">4. – 8. októbra 2027</p>
-                <p className="text-sm mt-1 text-[#2a9aa8]">Voľné miesta: 8 + 2 náhradníci</p>
+                <p className="text-sm mt-1 text-[#2a9aa8]">Obsadené 1/8 · náhradníci 0/2</p>
               </div>
             </div>
 
@@ -658,9 +660,10 @@ export default function VycvikPage() {
               <Info icon={<CalendarDays className="w-4 h-4" />} title="Termíny">
                 <p className="text-white/45 line-through">1. – 5. februára 2027</p>
                 <p className="text-sm" style={{ color: WARM }}>
-                  Vypredané
+                  Plne obsadené · 8/8, náhradníci 0/2
                 </p>
                 <p className="mt-2">4. – 8. októbra 2027</p>
+                <p className="text-sm text-[#2a9aa8]">Obsadené 1/8, náhradníci 0/2</p>
               </Info>
               <Info icon={<MapPin className="w-4 h-4" />} title="Miesto">
                 <p>Obrancov mieru 4</p>
@@ -692,7 +695,7 @@ export default function VycvikPage() {
             <div className="glass-card p-8 mt-8 text-center ring-1 ring-[#2a9aa8]/30">
               <h3 className="font-jakarta text-2xl font-bold text-white mb-3">Chcem sa prihlásiť</h3>
               <p className="text-white/60 max-w-xl mx-auto mb-6">
-                Napíšte nám na e-mail alebo zavolajte. Voľné miesta sú na termín 4. – 8. októbra 2027.
+                Napíšte nám na e-mail alebo zavolajte. Voľné miesta sú na termín 4. – 8. októbra 2027. Na termín 1. – 5. februára 2027 je možné prihlásiť sa ako náhradník.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <ObfuscatedEmail
