@@ -256,7 +256,7 @@ export const adultsBrainRegions: BrainRegion[] = [
     nriTechniques: [
       'Stimulácia bazálnych ganglií — 100-120 BPM',
       'Silné rytmické dupanie',
-      'Tlieskanie dup-dup-plesk vzorec',
+      'Tlieskanie plesk-plesk-plesk vzorec',
       'Rhythmic Entrainment',
     ],
   },
@@ -472,7 +472,7 @@ export const kidsBrainRegions: BrainRegion[] = [
       'Problémy s pozornosťou',
     ],
     activities: [
-      '🥁 Dup-dup-PLESK! (Queen)',
+      '🥁 Plesk-plesk-plesk! (Queen)',
       '🎵 Búchanie na bubon',
       '👣 Pochodovanie v rytme',
       '👏 Rytmické tlieskanie',

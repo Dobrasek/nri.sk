@@ -8,7 +8,7 @@ const steps = [
     title: 'Rytmická aktivácia',
     bpm: '110 BPM',
     song: 'Queen — We Will Rock You',
-    desc: 'Silný základný rytmus dup-dup-plesk synchronizuje bazálne gangliá. Mozog sa orientuje v priestore a čase — základ pre všetky ďalšie pohyby.',
+    desc: 'Silný základný rytmus plesk-plesk-plesk synchronizuje bazálne gangliá. Mozog sa orientuje v priestore a čase — základ pre všetky ďalšie pohyby.',
     color: '#4a3080',
     emoji: '🥁',
   },
