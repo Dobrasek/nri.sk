@@ -12,7 +12,7 @@ Každá skladba má svoju úlohu a tempo, ktoré tú úlohu umožňuje.
 
 ## Úvodná fáza
 
-- **Queen — We Will Rock You (110 BPM)** — dup-dup-plesk synchronizuje bazálne gangliá.
+- **Queen — We Will Rock You (110 BPM)** — plesk-plesk-plesk synchronizuje bazálne gangliá.
   Mozog sa orientuje v priestore a čase.
 - **The Prodigy — No Good (133 BPM)** — eskalácia sympatiku. Celé telo v pohybe.
 - **Rammstein — Du Hast (120 BPM)** — Freeze Dance. Frontálny lalok trénuje inhibíciu.
